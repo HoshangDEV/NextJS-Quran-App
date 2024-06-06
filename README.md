@@ -2,6 +2,8 @@
 
 Welcome to the Quran Application, a beautifully crafted web application built using Next.js and TypeScript. This application allows users to explore and read the Surahs of the Quran in a simple and intuitive interface.
 
+## [Preview](https://nextjs-quran-app.vercel.app)
+
 ## Features
 
 - **Browse Surahs**: Users can view a list of all Surahs and select any to read in detail.
