@@ -24,7 +24,7 @@ const config = {
       },
       fontFamily: {
         quran: ["Amiri Quran", ...fontFamily.serif],
-        roboto: ["Roboto", ...fontFamily.sans],
+        roboto: ["var(--font-roboto)", ...fontFamily.sans],
       },
       colors: {
         border: "hsl(var(--border))",

@@ -6,12 +6,10 @@ import { HeartPulseIcon, HomeIcon } from "lucide-react";
 import Link from "next/link";
 
 export default async function Page() {
-  const surahs: Surahs = await fetch(
-    "http://api.alquran.cloud/v1/quran/er.asad"
-  )
+  const surahs: Surahs = await fetch("https://api.alquran.cloud/v1/surah")
     .then((res) => res.json())
     .then((data) => {
-      return data?.data?.surahs;
+      return data?.data;
     })
     .catch((error) => {
       console.log(error);
@@ -21,9 +19,11 @@ export default async function Page() {
     <div className="space-y-14 py-8">
       <div className="flex justify-between items-center gap-4">
         <div className="flex gap-2 items-center">
-          <Link href={"/"} className="md:mr-4">
-            <HeartPulseIcon className="size-10 text-muted-foreground" />
-          </Link>
+          <Button asChild size={"icon"}>
+            <Link href={"/"}>
+              <HeartPulseIcon className="" />
+            </Link>
+          </Button>
           <Button asChild size={"icon"} variant={"secondary"}>
             <Link
               href={"https://github.com/HoshangDEV/NextJS-Quran-App"}
@@ -37,7 +37,7 @@ export default async function Page() {
             </Link>
           </Button>
         </div>
-        <h1 className="text-3xl md:text-5xl font-quran text-center">
+        <h1 className="text-3xl md:text-5xl font-quran text-center pb-6">
           القرآن الكریم
         </h1>
       </div>
@@ -45,10 +45,17 @@ export default async function Page() {
         {surahs &&
           surahs.map((surah) => (
             <Link key={surah.number} href={`/${surah.number}`}>
-              <Card className="hover:shadow-xl hover:scale-105 transition-all">
+              <Card className="hover:shadow-lg hover:scale-105 transition-all">
                 <CardHeader className="flex-row gap-2 items-center text-3xl rtl">
                   <div className="flex gap-4 items-center text-2xl">
-                    <p className="font-roboto">{surah.number}</p>
+                    {/* <p className="font-roboto">{surah.number}</p> */}
+                    <Button
+                      asChild
+                      variant={"outline"}
+                      size={"icon"}
+                      className="rounded-xl font-roboto">
+                      <p>{surah.number}</p>
+                    </Button>
                     <p className="font-quran mb-4">{surah.name}</p>
                   </div>
                 </CardHeader>
