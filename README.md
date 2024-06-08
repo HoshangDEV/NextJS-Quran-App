@@ -1,13 +1,16 @@
 # Quran Application
 
-Welcome to the Quran Application, a beautifully crafted web application built using Next.js and TypeScript. This application allows users to explore and read the Surahs of the Quran in a simple and intuitive interface.
+Welcome to the Quran Application, a beautifully crafted web application built using Next.js and TypeScript. This application allows users to explore and read the Surahs of the Quran in a simple and intuitive interface, now with audio for each Ayah.
 
-## [Preview](https://nextjs-quran-app.vercel.app)
+## [Preview](https://quran.hoshang.dev)
+
+![Quran Application Screenshot](public/screenshoot-1.png)
 
 ## Features
 
 - **Browse Surahs**: Users can view a list of all Surahs and select any to read in detail.
 - **Read Surahs**: Each Surah can be read in a beautifully formatted text that enhances the reading experience.
+- **Listen to Ayahs**: Experience the Quran audibly by listening to the recitation of each Ayah.
 
 ## Technology Stack
 
@@ -17,7 +20,7 @@ Welcome to the Quran Application, a beautifully crafted web application built us
 
 ## API Usage
 
-This application utilizes the [Al-Quran Cloud API](https://alquran.cloud/api) to fetch the Surahs data. This API provides a robust and reliable source of Quranic text and information, making it an excellent choice for our application.
+This application utilizes the [Al-Quran Cloud API](https://alquran.cloud/api) to fetch the Surahs data and audio files for each Ayah. This API provides a robust and reliable source of Quranic text, information, and audio, making it an excellent choice for our application.
 
 ## Getting Started
 
