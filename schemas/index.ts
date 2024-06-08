@@ -1,4 +1,4 @@
-export type Surah = {
+export type SurahType = {
   number: number;
   name: string;
   ayahs: {
@@ -7,7 +7,7 @@ export type Surah = {
   }[];
 };
 
-export type Surahs = {
+export type SurahsType = {
   number: number;
   name: string;
 }[];

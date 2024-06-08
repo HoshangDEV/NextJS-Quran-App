@@ -1,12 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader } from "@/components/ui/card";
-import { Surah } from "@/schemas";
+import { SurahType } from "@/schemas";
 import { HeartPulseIcon, HomeIcon } from "lucide-react";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 
 export default async function Page({ params }: { params: { surah: string } }) {
-  const surah: Surah = await fetch(
+  const surah: SurahType = await fetch(
     `https://api.alquran.cloud/v1/surah/${params.surah}`
   )
     .then((response) => response.json())
