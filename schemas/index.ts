@@ -4,6 +4,7 @@ export type SurahType = {
   ayahs: {
     numberInSurah: number;
     text: string;
+    audio: string;
   }[];
 };
 
