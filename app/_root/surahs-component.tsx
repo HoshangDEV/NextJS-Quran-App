@@ -4,8 +4,10 @@ import { Card, CardHeader } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { SurahsType } from "@/schemas";
 import { SearchIcon, XCircleIcon } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import shape_1 from "@/assets/shape-1.svg";
 
 export default function SurahsComponent({ surahs }: { surahs: SurahsType }) {
   const [surahsData, setSurahsData] = useState<SurahsType>(surahs);
@@ -35,20 +37,34 @@ export default function SurahsComponent({ surahs }: { surahs: SurahsType }) {
           placeholder="گەڕان..."
           className="pr-9 pl-4 py-2 rtl font-kurdish "
           onChange={(e) => setSearch(e.target.value)}
+          value={search}
         />
-        <XCircleIcon
-          className={`absolute left-2 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground transition-opacity ${
-            search ? "opacity-100" : "opacity-0"
-          }`}
-        />
+        <Button
+          className="absolute left-0 top-1/2 -translate-y-1/2 size-9 p-0"
+          variant={"ghost"}
+          onClick={() => setSearch("")}>
+          <XCircleIcon
+            className={` w-5 h-5 text-muted-foreground transition-opacity ${
+              search ? "opacity-100" : "opacity-0"
+            }`}
+          />
+        </Button>
         <SearchIcon className="absolute right-2 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 rtl">
         {surahsData &&
           surahsData.map((surah) => (
             <Link key={surah.number} href={`/${surah.number}`}>
-              <Card className="hover:shadow-lg hover:scale-105 transition-all">
-                <CardHeader className="flex-row gap-2 items-center text-3xl rtl">
+              <Card className="hover:shadow-lg hover:scale-105 transition-all relative h-[100px] overflow-hidden">
+                <Image
+                  src={shape_1}
+                  alt={surah.name}
+                  width={190}
+                  height={190}
+                  className="absolute left-0 top-0 hover:border-none hover:outline-none hover:ring-0"
+                  loading="lazy"
+                />
+                <CardHeader className="flex-row gap-2 items-center text-3xl rtl z-50">
                   <div className="flex gap-4 items-center text-2xl">
                     <Button
                       asChild

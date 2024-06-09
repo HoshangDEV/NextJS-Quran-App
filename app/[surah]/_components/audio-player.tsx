@@ -42,7 +42,6 @@ export default function AudioPlayer({ src, className }: AudioPlayerProps) {
         onEnded={() => setIsPlaying(false)}
         onPlay={() => setIsPlaying(true)}
         onPause={() => setIsPlaying(false)}
-        onDurationChange={(e) => setCurrentTime(e.currentTarget.duration)}
       />
 
       <div className="flex items-center gap-2 flex-row-reverse">

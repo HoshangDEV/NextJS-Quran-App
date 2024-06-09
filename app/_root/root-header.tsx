@@ -1,4 +1,5 @@
 import { ApiIcon } from "@/components/my-icons";
+import { ThemeToggle } from "@/components/theme/theme-toggle";
 import { Button } from "@/components/ui/button";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { HeartPulseIcon } from "lucide-react";
@@ -22,9 +23,10 @@ export default function RootHeader() {
         </Button>
         <Button asChild size={"icon"} variant={"secondary"}>
           <Link href={"https://alquran.cloud/api"} target="_blank">
-            <ApiIcon className="size-5" />
+            <ApiIcon className="size-5 fill-secondary-foreground" />
           </Link>
         </Button>
+        <ThemeToggle />
       </div>
       <h1 className="text-3xl md:text-5xl font-quran text-center pb-6">
         القرآن الكریم

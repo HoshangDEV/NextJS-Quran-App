@@ -2,7 +2,6 @@ export function ApiIcon(props: any) {
   return (
     <svg
       {...props}
-      fill="#000000"
       width="800px"
       height="800px"
       viewBox="0 0 32 32"

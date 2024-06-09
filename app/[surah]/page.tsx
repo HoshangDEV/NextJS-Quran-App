@@ -20,7 +20,7 @@ export default async function Page({ params }: { params: { surah: string } }) {
     });
 
   return (
-    <div className="space-y-14 py-8">
+    <div className="py-8">
       <SurahComponent surah={surah} />
     </div>
   );
