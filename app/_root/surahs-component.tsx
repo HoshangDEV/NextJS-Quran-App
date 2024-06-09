@@ -57,6 +57,7 @@ export default function SurahsComponent({ surahs }: { surahs: SurahsType }) {
             <Link key={surah.number} href={`/${surah.number}`}>
               <Card className="hover:shadow-lg hover:scale-105 transition-all relative h-[100px] overflow-hidden">
                 <Image
+                  quality={100}
                   src={shape_1}
                   alt={surah.name}
                   width={500}
