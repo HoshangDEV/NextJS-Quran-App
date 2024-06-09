@@ -7,7 +7,7 @@ import { SearchIcon, XCircleIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import shape_1 from "@/assets/shape-1.svg";
+import shape_1 from "@/assets/shape-1.png";
 
 export default function SurahsComponent({ surahs }: { surahs: SurahsType }) {
   const [surahsData, setSurahsData] = useState<SurahsType>(surahs);
@@ -59,10 +59,10 @@ export default function SurahsComponent({ surahs }: { surahs: SurahsType }) {
                 <Image
                   src={shape_1}
                   alt={surah.name}
-                  width={190}
-                  height={190}
-                  className="absolute left-0 top-0 hover:border-none hover:outline-none hover:ring-0"
-                  loading="lazy"
+                  width={500}
+                  height={500}
+                  className="absolute left-0 top-0 hover:border-none hover:outline-none hover:ring-0 w-[120px] h-[120px]"
+                  loading="eager"
                 />
                 <CardHeader className="flex-row gap-2 items-center text-3xl rtl z-50">
                   <div className="flex gap-4 items-center text-2xl">
