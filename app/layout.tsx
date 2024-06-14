@@ -2,11 +2,10 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-import { CopyrightIcon } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
-import Link from "next/link";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import RootFooter from "./_root/root-footer";
+import { Analytics } from "@vercel/analytics/react";
 
 const fontRoboto = Poppins({
   subsets: ["latin"],
@@ -36,6 +35,7 @@ export default async function RootLayout({
           <Separator />
           <RootFooter />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
