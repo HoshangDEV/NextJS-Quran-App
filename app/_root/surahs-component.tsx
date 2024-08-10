@@ -2,15 +2,19 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { SurahsType } from "@/schemas";
+import { SurahsType } from "@/types";
 import { SearchIcon, XCircleIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import shape_1 from "@/assets/shape-1.png";
 
-export default function SurahsComponent({ surahs }: { surahs: SurahsType }) {
-  const [surahsData, setSurahsData] = useState<SurahsType>(surahs);
+export default function SurahsComponent({
+  surahs,
+}: {
+  surahs: SurahsType["data"];
+}) {
+  const [surahsData, setSurahsData] = useState<SurahsType["data"]>(surahs);
   const [search, setSearch] = useState<string>("");
 
   useEffect(() => {

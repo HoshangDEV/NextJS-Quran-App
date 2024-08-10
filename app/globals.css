@@ -81,8 +81,6 @@
 
 .rtl {
   direction: rtl;
-  writing-mode: rtl;
-  text-align: right;
 }
 
 /* CSS for loading animation */

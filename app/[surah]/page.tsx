@@ -1,26 +1,16 @@
-import { SurahType } from "@/schemas";
 import SurahComponent from "./_components/surah-component";
 import SomethingWentWrong from "@/components/something-went-wrong";
+import { GetSurah, GetTafseerList } from "@/action";
+import { redirect } from "next/navigation";
 
 export default async function Page({ params }: { params: { surah: string } }) {
-  let surah: SurahType | null = null;
+  // check if the params value is a number
+  const surahNumber = Number(params.surah);
+  if (isNaN(surahNumber)) redirect("/");
 
-  try {
-    const response = await fetch(
-      `https://api.alquran.cloud/v1/surah/${params.surah}/ar.alafasy`
-    );
-    const data = await response.json();
-    if (data.code === 200) {
-      surah = data.data;
-    } else {
-      return <SomethingWentWrong />;
-    }
-  } catch (error) {
-    console.error(error);
-    return <SomethingWentWrong />;
-  }
+  // get surah data
+  const { error, data } = await GetSurah({ surahNumber });
+  if (error || !data) return <SomethingWentWrong />;
 
-  return (
-    <div className="py-8">{surah && <SurahComponent surah={surah} />}</div>
-  );
+  return <div className="py-8">{<SurahComponent surah={data} />}</div>;
 }

@@ -7,13 +7,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Slider } from "@/components/ui/slider";
-import {
-  Volume1Icon,
-  Volume2Icon,
-  VolumeIcon,
-  VolumeXIcon,
-} from "lucide-react";
-import { useState } from "react";
+import { Volume1Icon, Volume2Icon, VolumeXIcon } from "lucide-react";
 
 export default function VolumeSlider({
   volume,

@@ -1,5 +1,4 @@
 "use client";
-import { SurahType } from "@/schemas";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader } from "@/components/ui/card";
 import { HeartPulseIcon, HomeIcon } from "lucide-react";
@@ -8,8 +7,13 @@ import AudioPlayer from "./audio-player";
 import ScrollProgressBar from "./scroll-progress-bar";
 import { ThemeToggle } from "@/components/theme/theme-toggle";
 import AyahNumber from "./ayah-number";
+import { SurahType, TafseerListType } from "@/types";
 
-export default function SurahComponent({ surah }: { surah: SurahType }) {
+export default function SurahComponent({
+  surah,
+}: {
+  surah: SurahType["data"];
+}) {
   return (
     <>
       <ScrollProgressBar />
