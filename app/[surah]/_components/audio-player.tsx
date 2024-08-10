@@ -58,7 +58,8 @@ export default function AudioPlayer({ src, className }: AudioPlayerProps) {
               }
             }
             setIsPlaying(!isPlaying);
-          }}>
+          }}
+        >
           {isPlaying ? (
             <PauseIcon className="w-5 h-5" />
           ) : (

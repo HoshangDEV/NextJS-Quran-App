@@ -28,8 +28,9 @@ export default async function RootLayout({
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased flex flex-col justify-between",
-          fontRoboto.variable
-        )}>
+          fontRoboto.variable,
+        )}
+      >
         <ThemeProvider attribute="class" defaultTheme="system">
           <main className="container">{children}</main>
           <Separator />

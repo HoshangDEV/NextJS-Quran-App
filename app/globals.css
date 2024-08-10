@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -144,4 +145,13 @@
   100% {
     transform: translate(24px, 0);
   }
+}
+
+
+
+.simple-text{
+  font-family: "El Messiri", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
