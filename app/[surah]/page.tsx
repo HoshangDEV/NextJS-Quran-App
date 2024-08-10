@@ -7,7 +7,7 @@ export default async function Page({ params }: { params: { surah: string } }) {
 
   try {
     const response = await fetch(
-      `https://api.alquran.cloud/v1/surah/${params.surah}/ar.alafasy`
+      `https://api.alquran.cloud/v1/surah/${params.surah}/ar.alafasy`,
     );
     const data = await response.json();
     if (data.code === 200) {

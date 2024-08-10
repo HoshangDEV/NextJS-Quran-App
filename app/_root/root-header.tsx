@@ -17,7 +17,8 @@ export default function RootHeader() {
         <Button asChild size={"icon"} variant={"secondary"}>
           <Link
             href={"https://github.com/HoshangDEV/NextJS-Quran-App"}
-            target="_blank">
+            target="_blank"
+          >
             <GitHubLogoIcon />
           </Link>
         </Button>

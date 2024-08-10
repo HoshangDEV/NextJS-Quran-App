@@ -21,8 +21,8 @@ export default function SurahsComponent({ surahs }: { surahs: SurahsType }) {
             .replaceAll(/[\u064B-\u0652\u064E-\u0650\u0651\u0652\u06E1]/g, "")
             .replaceAll("ي", "ی")
             .replaceAll(/إ|أ|آ|ٱ/g, "ا")
-            .includes(search)
-        )
+            .includes(search),
+        ),
       );
     } else {
       setSurahsData(surahs);
@@ -42,7 +42,8 @@ export default function SurahsComponent({ surahs }: { surahs: SurahsType }) {
         <Button
           className="absolute left-0 top-1/2 -translate-y-1/2 size-9 p-0"
           variant={"ghost"}
-          onClick={() => setSearch("")}>
+          onClick={() => setSearch("")}
+        >
           <XCircleIcon
             className={` w-5 h-5 text-muted-foreground transition-opacity ${
               search ? "opacity-100" : "opacity-0"
@@ -71,7 +72,8 @@ export default function SurahsComponent({ surahs }: { surahs: SurahsType }) {
                       asChild
                       variant={"outline"}
                       size={"icon"}
-                      className="rounded-xl">
+                      className="rounded-xl"
+                    >
                       <p>{surah.number}</p>
                     </Button>
                     <p className="font-quran mb-4">{surah.name}</p>
