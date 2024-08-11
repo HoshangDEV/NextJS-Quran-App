@@ -70,7 +70,7 @@ export default function TafseerComponent({
           </DropdownMenuTrigger>
         </Button>
         <DropdownMenuContent className="font-kurdish text-right">
-          <DropdownMenuLabel>تفسير</DropdownMenuLabel>
+          <DropdownMenuLabel>تفسیر</DropdownMenuLabel>
           <DropdownMenuSeparator />
           {TafseerList.map((tafseer) => (
             <DropdownMenuItem
@@ -98,7 +98,7 @@ export default function TafseerComponent({
                 </DialogTitle>
               </DialogHeader>
               <ScrollArea className="max-h-[80vh] p-4 text-justify rtl">
-                : <p>{tafseerData?.text}</p>
+                <p>{tafseerData?.text}</p>
               </ScrollArea>
             </>
           )}
