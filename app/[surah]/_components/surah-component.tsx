@@ -1,18 +1,23 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader } from "@/components/ui/card";
-import { HeartPulseIcon, HomeIcon } from "lucide-react";
+import { Copy, HeartPulseIcon, HomeIcon } from "lucide-react";
 import Link from "next/link";
 import AudioPlayer from "./audio-player";
 import ScrollProgressBar from "./scroll-progress-bar";
 import { ThemeToggle } from "@/components/theme/theme-toggle";
 import AyahNumber from "./ayah-number";
 import { SurahType, TafseerListType } from "@/types";
+import TafseerComponent from "./tafseer-component";
+import { useState } from "react";
+
 
 export default function SurahComponent({
   surah,
+  TafseerList,
 }: {
   surah: SurahType["data"];
+  TafseerList: TafseerListType;
 }) {
   return (
     <>
@@ -64,6 +69,7 @@ export default function SurahComponent({
                     </div>
                   </div>
                   <AudioPlayer src={ayah.audio} className="w-full self-end" />
+                  <TafseerComponent surahNumber={surah.number} ayahNumber={ayah.numberInSurah} TafseerList={TafseerList} />
                 </CardHeader>
               </Card>
             ))}
