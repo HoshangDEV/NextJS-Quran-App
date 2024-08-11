@@ -52,8 +52,6 @@ export default function VolumeSlider({
             value={[volume * 100]}
             onValueChange={(values) => {
               setVolume(values[0] / 100);
-              console.log(values[0] / 100);
-
               onVolumeChange(values[0] / 100);
             }}
             min={0}

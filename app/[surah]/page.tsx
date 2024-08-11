@@ -6,6 +6,8 @@ export default async function Page({ params }: { params: { surah: string } }) {
   // check if the params value is a number
   const surahNumber = Number(params.surah);
   if (isNaN(surahNumber)) redirect("/");
+
+  // get tafseer list data
   const { error: tafseerError, data: TafseerList } = await GetTafseerList();
   if (tafseerError || !TafseerList) return <SomethingWentWrong />;
   // get surah data
@@ -16,5 +18,5 @@ export default async function Page({ params }: { params: { surah: string } }) {
     <div className="py-8">
       {<SurahComponent surah={data} TafseerList={TafseerList} />}
     </div>
-  )
+  );
 }
