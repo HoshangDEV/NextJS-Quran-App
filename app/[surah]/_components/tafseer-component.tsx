@@ -10,7 +10,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { TafseerListType, TafseerType } from "@/types";
-import { BookIcon, Loader2 } from "lucide-react";
+import { BookIcon, Loader } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -40,8 +40,8 @@ export default function TafseerComponent({
   );
 
   const handleTafseerClick = (tafseerId: number) => {
+    setIsDialogOpen(true);
     startTransition(() => {
-      setIsDialogOpen(true);
       GetTafseer({
         surahNumber,
         ayahNumber,
@@ -111,7 +111,7 @@ export default function TafseerComponent({
 function Loading() {
   return (
     <div className="grid place-items-center min-h-48">
-      <Loader2 className="size-4" />{" "}
+      <Loader className="size-4 animate-spin" />{" "}
     </div>
   );
 }
