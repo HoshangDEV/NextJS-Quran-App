@@ -64,9 +64,13 @@ export default function TafseerComponent({
     <>
       {/* Mofasir Dropdown */}
       <DropdownMenu>
-        <Button asChild variant={"outline"} className="size-9 p-0.5">
+        <Button
+          asChild
+          variant={"outline"}
+          className="gap-2 font-kurdish text-xs">
           <DropdownMenuTrigger>
             <BookIcon className="size-4" />
+            تفسیر
           </DropdownMenuTrigger>
         </Button>
         <DropdownMenuContent className="font-kurdish text-right">
