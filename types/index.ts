@@ -2,6 +2,7 @@ export type SurahType = {
   data: {
     number: number;
     name: string;
+    numberOfAyahs: number;
     ayahs: {
       numberInSurah: number;
       text: string;
