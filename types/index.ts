@@ -33,3 +33,9 @@ export type TafseerType = {
   ayah_number: number;
   text: string;
 };
+
+export type TafseerKurdishType = {
+  data: {
+    text: string;
+  };
+};

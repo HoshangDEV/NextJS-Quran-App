@@ -1,4 +1,9 @@
-import { SurahsType, SurahType, TafseerListType, TafseerType } from "@/types";
+import {
+  SurahsType,
+  SurahType,
+  TafseerKurdishType,
+  TafseerListType,
+} from "@/types";
 
 export const GetSurahs = async () => {
   try {
@@ -50,6 +55,31 @@ export const GetTafseerList = async () => {
       return { status: response.status, error: "Not Found" };
 
     const data = (await response.json()) as TafseerListType;
+
+    return {
+      status: response.status,
+      data,
+      success: "Data fetched successfully",
+    };
+  } catch (error) {
+    return { status: 500, error: "Internal Server Error" };
+  }
+};
+
+export const GetKurdishTafseer = async ({
+  ayahNumber,
+}: {
+  ayahNumber: number;
+}) => {
+  try {
+    const response = await fetch(
+      `https://api.alquran.cloud/v1/ayah/${ayahNumber}/ku.asan`
+    );
+
+    if (response.status !== 200)
+      return { status: response.status, error: "Not Found" };
+
+    const { data } = (await response.json()) as TafseerKurdishType;
 
     return {
       status: response.status,

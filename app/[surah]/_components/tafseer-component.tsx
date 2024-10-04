@@ -21,6 +21,7 @@ import { useState, useTransition } from "react";
 import { GetTafseer } from "@/action/server";
 import { toast } from "sonner";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { GetKurdishTafseer } from "@/action";
 
 type TafseerComponentProps = {
   surahNumber: number;
@@ -41,22 +42,36 @@ export default function TafseerComponent({
 
   const handleTafseerClick = (tafseerId: number) => {
     setIsDialogOpen(true);
-    startTransition(() => {
-      GetTafseer({
-        surahNumber,
-        ayahNumber,
-        tafseerId,
-      })
-        .then((res) => {
-          if (res.status === 200) {
-            setTafseerData(res.data);
-          } else {
-            toast.error("Failed to get tafseer");
-          }
-        })
-        .catch((err) => {
-          toast.error("Failed to get tafseer");
+    startTransition(async () => {
+      if (tafseerId === 1946) {
+        const { error, success, data } = await GetKurdishTafseer({
+          ayahNumber,
         });
+        if (error) {
+          toast.error("Failed to get tafseer");
+        }
+        if (success) {
+          setTafseerData({
+            tafseer_id: 1946,
+            tafseer_name: "کوردی",
+            ayah_url: "",
+            ayah_number: ayahNumber,
+            text: data.text,
+          });
+        }
+      } else {
+        const { error, success, data } = await GetTafseer({
+          surahNumber,
+          ayahNumber,
+          tafseerId,
+        });
+        if (error) {
+          toast.error("Failed to get tafseer");
+        }
+        if (success) {
+          setTafseerData(data);
+        }
+      }
     });
   };
 
@@ -75,17 +90,27 @@ export default function TafseerComponent({
         </Button>
         <DropdownMenuContent className="font-kurdish text-right">
           <DropdownMenuLabel>تفسیر</DropdownMenuLabel>
-          <DropdownMenuSeparator />
-          {TafseerList.map((tafseer) => (
+          <ScrollArea className="h-[40vh] pr-2">
+            <DropdownMenuSeparator />
             <DropdownMenuItem
               className="justify-end"
-              key={tafseer.id}
               onClick={() => {
-                handleTafseerClick(tafseer.id);
+                handleTafseerClick(1946);
               }}>
-              {tafseer.name}
+              کوردی
             </DropdownMenuItem>
-          ))}
+
+            {TafseerList.map((tafseer) => (
+              <DropdownMenuItem
+                className="justify-end"
+                key={tafseer.id}
+                onClick={() => {
+                  handleTafseerClick(tafseer.id);
+                }}>
+                {tafseer.name}
+              </DropdownMenuItem>
+            ))}
+          </ScrollArea>
         </DropdownMenuContent>
       </DropdownMenu>
 

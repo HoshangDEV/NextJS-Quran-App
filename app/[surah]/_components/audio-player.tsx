@@ -28,9 +28,8 @@ export default function AudioPlayer({
   const [currentAyah, setCurrentAyah] = useAtom(currentAyahAtom);
 
   useEffect(() => {
-    const v = localStorage.getItem("volume");
-    setVolume(Number(v) || 1);
-    setCurrentAyah(1);
+    const storedVolume = localStorage.getItem("volume");
+    setVolume(Number(storedVolume) || 1);
   }, []);
 
   useEffect(() => {
@@ -43,29 +42,45 @@ export default function AudioPlayer({
     setDuration(audioRef.current?.duration);
   }, [audioRef.current?.duration]);
 
+  const playAudio = () => {
+    const storedVolume = localStorage.getItem("volume");
+    const volumeToSet = Number(storedVolume) || 1;
+    setVolume(volumeToSet);
+    if (audioRef.current) {
+      audioRef.current.volume = volumeToSet;
+      audioRef.current.play();
+    }
+    setIsPlaying(true);
+  };
+
+  const pauseAudio = () => {
+    audioRef.current?.pause();
+    setIsPlaying(false);
+  };
+
   const handlePlayPause = () => {
     if (isPlaying && currentAyah === numberInSurah) {
-      audioRef.current?.pause();
-      setIsPlaying(false);
+      pauseAudio();
     } else {
       if (isPlaying && currentAyah !== numberInSurah) {
-        audioRef.current?.pause();
+        pauseAudio();
       }
       setCurrentAyah(numberInSurah);
-      audioRef.current?.play();
-      setIsPlaying(true);
+      playAudio();
     }
   };
 
   useEffect(() => {
     if (currentAyah === numberInSurah) {
-      audioRef.current?.play();
-      setIsPlaying(true);
+      playAudio();
     } else {
-      audioRef.current?.pause();
-      setIsPlaying(false);
+      pauseAudio();
     }
   }, [currentAyah]);
+
+  const handleAudioError = () => {
+    console.error("Audio failed to load.");
+  };
 
   return (
     <div className={className}>
@@ -82,6 +97,7 @@ export default function AudioPlayer({
             setCurrentAyah(numberInSurah + 1);
           }
         }}
+        onError={handleAudioError}
       />
 
       <div className="flex items-center gap-2 flex-row-reverse">
