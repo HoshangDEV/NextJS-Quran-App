@@ -4,7 +4,7 @@ import { Slider } from "@/components/ui/slider";
 import { PauseIcon, PlayIcon } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import VolumeSlider from "./volume-slider";
-import { currentAyahAtom, isQuranPlayingAtom } from "@/constants";
+import { currentAyahAtom, isQuranPlayingAtom } from "@/atoms";
 import { useAtom } from "jotai";
 
 interface AudioPlayerProps {

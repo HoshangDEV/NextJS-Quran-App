@@ -13,7 +13,7 @@ export default async function Page() {
     <div className="space-y-14 py-8">
       <RootHeader />
       <Separator />
-      {<SurahsComponent surahs={data} />}
+      <SurahsComponent surahs={data} />
     </div>
   );
 }

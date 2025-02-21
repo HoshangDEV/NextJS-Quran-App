@@ -1,17 +1,17 @@
-import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
-import "./globals.css";
-import { cn } from "@/lib/utils";
-import { Separator } from "@/components/ui/separator";
 import { ThemeProvider } from "@/components/theme/theme-provider";
-import RootFooter from "./_root/root-footer";
+import {
+  amiri,
+  amiriQuran,
+  balooBhaijaan2,
+  notoKufiArabic,
+  notoNaskhArabic,
+  poppins,
+  scheherazadeNew,
+} from "@/public/fonts";
 import { Analytics } from "@vercel/analytics/react";
-
-const fontRoboto = Poppins({
-  subsets: ["latin"],
-  variable: "--font-sans",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-});
+import type { Metadata } from "next";
+import RootFooter from "./_root/root-footer";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Quran App",
@@ -24,18 +24,23 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={cn(
-          "min-h-screen bg-background font-sans antialiased flex flex-col justify-between",
-          fontRoboto.variable
-        )}>
+    <html
+      lang="en"
+      className={`
+      ${amiri.variable} 
+      ${amiriQuran.variable}
+      ${balooBhaijaan2.variable}
+      ${notoNaskhArabic.variable}
+      ${scheherazadeNew.variable}
+      ${poppins.variable}
+      ${notoKufiArabic.variable}
+      `}>
+      <body className="min-h-screen bg-background antialiased flex flex-col justify-between font-poppins">
         <ThemeProvider attribute="class" defaultTheme="system">
           <main className="container">{children}</main>
-          <Separator />
           <RootFooter />
+          <Analytics />
         </ThemeProvider>
-        <Analytics />
       </body>
     </html>
   );

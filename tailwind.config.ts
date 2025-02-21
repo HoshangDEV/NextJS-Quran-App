@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-const { fontFamily } = require("tailwindcss/defaultTheme");
 
 const config = {
   darkMode: ["class"],
@@ -23,9 +22,13 @@ const config = {
         rtl: "rtl",
       },
       fontFamily: {
-        quran: ["Amiri Quran", ...fontFamily.serif],
-        kurdish: ["Noto Kufi Arabic", ...fontFamily.sans],
-        sans: ["var(--font-sans)", ...fontFamily.sans],
+        "amiri-quran": ["var(--font-amiri-quran)"],
+        amiri: ["var(--font-amiri)"],
+        "baloo-bhaijaan-2": ["var(--font-baloo-bhaijaan-2)"],
+        "noto-naskh-arabic": ["var(--font-noto-naskh-arabic)"],
+        "scheherazade-new": ["var(--font-scheherazade-new)"],
+        "noto-kufi-arabic": ["var(--font-noto-kufi-arabic)"],
+        poppins: ["var(--font-sans)"],
       },
       colors: {
         border: "hsl(var(--border))",

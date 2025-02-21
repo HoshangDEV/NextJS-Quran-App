@@ -16,7 +16,7 @@ export default async function Page({ params }: { params: { surah: string } }) {
 
   return (
     <div className="py-8">
-      {<SurahComponent surah={data} TafseerList={TafseerList} />}
+      <SurahComponent surah={data} TafseerList={TafseerList} />
     </div>
   );
 }

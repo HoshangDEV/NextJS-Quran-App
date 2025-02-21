@@ -8,6 +8,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import shape_1 from "@/assets/shape-1.png";
+import { cn } from "@/lib/utils";
+import { currentFontAtom } from "@/atoms";
+import { useAtomValue } from "jotai";
 
 export default function SurahsComponent({
   surahs,
@@ -16,6 +19,7 @@ export default function SurahsComponent({
 }) {
   const [surahsData, setSurahsData] = useState<SurahsType["data"]>(surahs);
   const [search, setSearch] = useState<string>("");
+  const font = useAtomValue(currentFontAtom);
 
   useEffect(() => {
     if (search) {
@@ -39,7 +43,7 @@ export default function SurahsComponent({
         <Input
           type="text"
           placeholder="گەڕان..."
-          className="pr-9 pl-4 py-2 rtl font-kurdish "
+          className="pr-9 pl-4 py-2 rtl font-noto-kufi-arabic "
           onChange={(e) => setSearch(e.target.value)}
           value={search}
         />
@@ -78,7 +82,7 @@ export default function SurahsComponent({
                       className="rounded-xl">
                       <p>{surah.number}</p>
                     </Button>
-                    <p className="font-quran mb-4">{surah.name}</p>
+                    <p className={cn("mb-4", `font-${font}`)}>{surah.name}</p>
                   </div>
                 </CardHeader>
               </Card>

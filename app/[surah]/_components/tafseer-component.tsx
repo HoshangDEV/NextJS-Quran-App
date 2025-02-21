@@ -82,7 +82,7 @@ export default function TafseerComponent({
         <Button
           asChild
           variant={"outline"}
-          className="gap-2 font-kurdish text-xs">
+          className="gap-2 font-noto-kufi-arabic text-xs">
           <DropdownMenuTrigger>
             <BookIcon className="size-4" />
             تفسیر
@@ -116,7 +116,7 @@ export default function TafseerComponent({
 
       {/* Tafseer Dialog */}
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-        <DialogContent className="font-kurdish">
+        <DialogContent className="font-noto-naskh-arabic">
           {isPending ? (
             <Loading />
           ) : (
