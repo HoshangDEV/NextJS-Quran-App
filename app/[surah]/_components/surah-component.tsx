@@ -1,18 +1,14 @@
 "use client";
 
 import { currentFontAtom } from "@/atoms";
-import { ThemeToggle } from "@/components/theme/theme-toggle";
-import { Button } from "@/components/ui/button";
+import ButtonGroup from "@/components/button-group";
 import { Card, CardHeader } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { SurahType, TafseerListType } from "@/types";
 import { useAtomValue } from "jotai";
-import { HeartPulseIcon, HomeIcon } from "lucide-react";
-import Link from "next/link";
 import AudioPlayer from "./audio-player";
 import AyahNumber from "./ayah-number";
 import ScrollProgressBar from "./scroll-progress-bar";
-import SurahSettings from "./surah-settings";
 import TafseerComponent from "./tafseer-component";
 
 export default function SurahComponent({
@@ -29,19 +25,6 @@ export default function SurahComponent({
       <ScrollProgressBar />
       <div className="space-y-14">
         <header className="flex justify-between items-center gap-4">
-          <div className="flex gap-4 items-center">
-            <Button asChild size={"icon"}>
-              <Link href={"/"}>
-                <HeartPulseIcon className="" />
-              </Link>
-            </Button>
-            <ThemeToggle />
-            <Button asChild size={"icon"} variant={"secondary"}>
-              <Link href={"/"}>
-                <HomeIcon className="size-5" />
-              </Link>
-            </Button>
-          </div>
           <h1
             className={cn(
               "text-3xl md:text-5xl text-center pb-6",
@@ -49,17 +32,15 @@ export default function SurahComponent({
             )}>
             {surah.name}
           </h1>
+
+          <ButtonGroup />
         </header>
-        <SurahSettings />
         <div className="flex flex-col gap-2">
           {surah.number !== 1 && (
             <Card>
               <CardHeader className="flex-row gap-2 items-center text-3xl rtl py-10">
                 <div
-                  className={cn(
-                    "text-2xl text-center w-full",
-                    `font-${font}`
-                  )}>
+                  className={cn("text-2xl text-center w-full", `font-${font}`)}>
                   بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
                 </div>
               </CardHeader>
@@ -68,7 +49,7 @@ export default function SurahComponent({
           {surah &&
             surah.ayahs.map((ayah) => (
               <Card key={ayah.numberInSurah}>
-                <CardHeader className="flex-col gap-2 items-start text-3xl rtl cursor-default">
+                <div className="flex flex-col gap-2 items-start text-3xl rtl cursor-default p-6">
                   <div className="text-2xl">
                     <span
                       className={cn(
@@ -97,7 +78,7 @@ export default function SurahComponent({
                     ayahNumber={ayah.numberInSurah}
                     TafseerList={TafseerList}
                   />
-                </CardHeader>
+                </div>
               </Card>
             ))}
         </div>

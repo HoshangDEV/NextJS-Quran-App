@@ -33,8 +33,8 @@ export default function VolumeSlider({
           <Volume1Icon className="w-5 h-5" />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-[200px] pb-3">
-        <DropdownMenuLabel className="flex items-center gap-2">
+      <DropdownMenuContent className="w-[200px] pb-3" side="left">
+        <DropdownMenuLabel className="flex items-center gap-2 justify-between">
           <span className="mb-1">
             {volume > 0.5 ? (
               <Volume2Icon className="w-5 h-5" />
@@ -44,7 +44,7 @@ export default function VolumeSlider({
               <Volume1Icon className="w-5 h-5" />
             )}
           </span>
-          Volume {(volume * 100).toFixed(0)}%
+          {(volume * 100).toFixed(0)}%
         </DropdownMenuLabel>
         {/* <DropdownMenuSeparator /> */}
         <DropdownMenuItem onClick={(e: any) => e.preventDefault()}>

@@ -34,7 +34,9 @@ export default async function RootLayout({
       ${scheherazadeNew.variable}
       ${poppins.variable}
       ${notoKufiArabic.variable}
-      `}>
+      `}
+      dir="rtl"
+      >
       <body className="min-h-screen bg-background antialiased flex flex-col justify-between font-poppins">
         <ThemeProvider attribute="class" defaultTheme="system">
           <main className="container">{children}</main>

@@ -1,36 +1,21 @@
-import { ApiIcon } from "@/components/my-icons";
-import { ThemeToggle } from "@/components/theme/theme-toggle";
-import { Button } from "@/components/ui/button";
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
-import { HeartPulseIcon } from "lucide-react";
-import Link from "next/link";
+"use client";
+
+import { currentFontAtom } from "@/atoms";
+import ButtonGroup from "@/components/button-group";
+import { cn } from "@/lib/utils";
+import { useAtomValue } from "jotai";
 
 export default function RootHeader() {
+  const font = useAtomValue(currentFontAtom);
+
   return (
     <div className="flex justify-between items-center gap-4">
-      <div className="flex gap-2 items-center">
-        <Button asChild size={"icon"}>
-          <Link href={"/"}>
-            <HeartPulseIcon className="" />
-          </Link>
-        </Button>
-        <Button asChild size={"icon"} variant={"secondary"}>
-          <Link
-            href={"https://github.com/HoshangDEV/NextJS-Quran-App"}
-            target="_blank">
-            <GitHubLogoIcon />
-          </Link>
-        </Button>
-        <Button asChild size={"icon"} variant={"secondary"}>
-          <Link href={"https://alquran.cloud/api"} target="_blank">
-            <ApiIcon className="size-5 fill-secondary-foreground" />
-          </Link>
-        </Button>
-        <ThemeToggle />
-      </div>
-      <h1 className="text-3xl md:text-5xl font-quran text-center pb-6">
+      <h1
+        className={cn("text-3xl md:text-5xl text-center pb-6", `font-${font}`)}>
         القرآن الكریم
       </h1>
+
+      <ButtonGroup />
     </div>
   );
 }

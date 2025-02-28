@@ -39,11 +39,11 @@ export default function SurahsComponent({
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="relative w-full md:max-w-lg self-end">
+      <div className="relative w-full md:max-w-lg">
         <Input
           type="text"
           placeholder="گەڕان..."
-          className="pr-9 pl-4 py-2 rtl font-noto-kufi-arabic "
+          className="pr-9 pl-4 py-2 rtl font-noto-kufi-arabic"
           onChange={(e) => setSearch(e.target.value)}
           value={search}
         />

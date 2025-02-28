@@ -1,6 +1,14 @@
 "use client";
 
+import { GetKurdishTafseer } from "@/action";
+import { GetTafseer } from "@/action/server";
 import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -9,19 +17,11 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { ScrollArea } from "@/components/ui/scroll-area";
 import { TafseerListType, TafseerType } from "@/types";
 import { BookIcon, Loader } from "lucide-react";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
 import { useState, useTransition } from "react";
-import { GetTafseer } from "@/action/server";
 import { toast } from "sonner";
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { GetKurdishTafseer } from "@/action";
 
 type TafseerComponentProps = {
   surahNumber: number;
@@ -78,7 +78,7 @@ export default function TafseerComponent({
   return (
     <>
       {/* Mofasir Dropdown */}
-      <DropdownMenu>
+      <DropdownMenu modal={false}>
         <Button
           asChild
           variant={"outline"}
@@ -88,7 +88,7 @@ export default function TafseerComponent({
             تفسیر
           </DropdownMenuTrigger>
         </Button>
-        <DropdownMenuContent className="font-kurdish text-right">
+        <DropdownMenuContent className="font-noto-kufi-arabic text-right">
           <DropdownMenuLabel>تفسیر</DropdownMenuLabel>
           <ScrollArea className="h-[40vh] pr-2">
             <DropdownMenuSeparator />
@@ -116,17 +116,17 @@ export default function TafseerComponent({
 
       {/* Tafseer Dialog */}
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-        <DialogContent className="font-noto-naskh-arabic">
+        <DialogContent>
           {isPending ? (
             <Loading />
           ) : (
             <>
               <DialogHeader>
-                <DialogTitle className="text-center">
+                <DialogTitle className="text-center font-noto-kufi-arabic">
                   {tafseerData?.tafseer_name}
                 </DialogTitle>
               </DialogHeader>
-              <ScrollArea className="max-h-[80vh] p-4 text-justify rtl">
+              <ScrollArea className="max-h-[80vh] p-4 text-justify rtl font-noto-naskh-arabic">
                 <p>{tafseerData?.text}</p>
               </ScrollArea>
             </>
