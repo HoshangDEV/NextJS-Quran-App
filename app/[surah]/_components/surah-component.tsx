@@ -24,12 +24,13 @@ export default function SurahComponent({
     <>
       <ScrollProgressBar />
       <div className="space-y-14">
-        <header className="flex justify-between items-center gap-4">
+        <header className="flex justify-between items-center gap-4 sticky top-1 bg-background z-50 pb-2 pt-5">
           <h1
             className={cn(
               "text-3xl md:text-5xl text-center pb-6",
               `font-${font}`
-            )}>
+            )}
+          >
             {surah.name}
           </h1>
 
@@ -40,7 +41,8 @@ export default function SurahComponent({
             <Card>
               <CardHeader className="flex-row gap-2 items-center text-3xl rtl py-10">
                 <div
-                  className={cn("text-2xl text-center w-full", `font-${font}`)}>
+                  className={cn("text-2xl text-center w-full", `font-${font}`)}
+                >
                   بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
                 </div>
               </CardHeader>
@@ -55,7 +57,8 @@ export default function SurahComponent({
                       className={cn(
                         "-mt-4 leading-[4rem] tracking-wide",
                         `font-${font}`
-                      )}>
+                      )}
+                    >
                       {ayah.numberInSurah === 1
                         ? ayah.text.replace(
                             "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ",
