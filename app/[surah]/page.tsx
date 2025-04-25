@@ -2,9 +2,15 @@ import SurahComponent from "./_components/surah-component";
 import SomethingWentWrong from "@/components/something-went-wrong";
 import { GetSurah, GetTafseerList } from "@/action";
 import { redirect } from "next/navigation";
-export default async function Page({ params }: { params: { surah: string } }) {
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ surah: string }>;
+}) {
+  const { surah } = await params;
+
   // check if the params value is a number
-  const surahNumber = Number(params.surah);
+  const surahNumber = Number(surah);
   if (isNaN(surahNumber)) redirect("/");
 
   // get tafseer list data
