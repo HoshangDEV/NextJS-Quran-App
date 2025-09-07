@@ -9,6 +9,7 @@ import AudioPlayer from "./audio-player";
 import AyahNumber from "./ayah-number";
 import ScrollProgressBar from "./scroll-progress-bar";
 import TafseerComponent from "./tafseer-component";
+import { Separator } from "@/components/ui/separator";
 
 export default function SurahComponent({
   surah,
@@ -48,37 +49,41 @@ export default function SurahComponent({
           )}
           {surah &&
             surah.ayahs.map((ayah) => (
-              <Card key={ayah.numberInSurah}>
-                <div className="flex flex-col gap-2 items-start text-3xl rtl cursor-default p-6">
-                  <div className="text-2xl">
-                    <span
-                      className="-mt-4 leading-[4rem] tracking-wide"
-                      style={{ fontFamily: `var(--font-${font})` }}
-                    >
-                      {ayah.numberInSurah === 1
-                        ? ayah.text.replace(
-                            "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ",
-                            ""
-                          )
-                        : ayah.text}
-                    </span>
-                    <div className="inline-block mr-2 -mb-3">
-                      <AyahNumber number={ayah.numberInSurah} />
-                    </div>
+              <div
+                className="flex flex-col gap-2 items-start text-3xl rtl cursor-default p-4"
+                key={ayah.numberInSurah}
+              >
+                <div className="text-2xl">
+                  <span
+                    className="-mt-4 leading-[4rem] tracking-wide"
+                    style={{ fontFamily: `var(--font-${font})` }}
+                  >
+                    {ayah.numberInSurah === 1
+                      ? ayah.text.replace(
+                          "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ",
+                          ""
+                        )
+                      : ayah.text}
+                  </span>
+                  <div className="inline-block mr-2 -mb-3">
+                    <AyahNumber number={ayah.numberInSurah} />
                   </div>
-                  <AudioPlayer
-                    src={ayah.audio}
-                    className="w-full self-end"
-                    numberInSurah={ayah.numberInSurah}
-                    numberOfAyahs={surah.numberOfAyahs}
-                  />
+                </div>
+                <div className="flex flex-row gap-2 w-full items-center">
                   <TafseerComponent
                     surahNumber={surah.number}
                     ayahNumber={ayah.numberInSurah}
                     TafseerList={TafseerList}
                   />
+                  <Separator orientation="vertical" className="h-4" />
+                  <AudioPlayer
+                    src={ayah.audio}
+                    className="w-full"
+                    numberInSurah={ayah.numberInSurah}
+                    numberOfAyahs={surah.numberOfAyahs}
+                  />
                 </div>
-              </Card>
+              </div>
             ))}
         </div>
       </div>

@@ -5,7 +5,8 @@ import { Button } from "@/components/ui/button";
 import {
   Drawer,
   DrawerContent,
-  DrawerTrigger
+  DrawerTitle,
+  DrawerTrigger,
 } from "@/components/ui/drawer";
 import {
   Select,
@@ -25,18 +26,25 @@ export default function Settings() {
   return (
     <Drawer>
       <DrawerTrigger asChild>
-        <Button size={"icon"}>
+        <Button size={"icon"} variant={"secondary"} className="h-8 w-8">
           <SettingsIcon className="size-4" />
         </Button>
       </DrawerTrigger>
       <DrawerContent>
+        <DrawerTitle className="sr-only">Settings</DrawerTitle>
         <div className="mx-auto w-full max-w-sm py-10">
           <div className="grid grid-cols-3 items-center gap-4">
-            <Label className="text-left" style={{ fontFamily: "var(--font-noto-kufi-arabic)" }}>فۆنت</Label>
+            <Label
+              className="text-left"
+              style={{ fontFamily: "var(--font-noto-kufi-arabic)" }}
+            >
+              فۆنت
+            </Label>
             <Select
               onValueChange={(value) => setFont(value)}
               value={font}
-              dir="rtl">
+              dir="rtl"
+            >
               <SelectTrigger className="w-[180px] h-13 col-span-2">
                 <SelectValue placeholder="فۆنت" />
               </SelectTrigger>
@@ -45,11 +53,13 @@ export default function Settings() {
                   <SelectItem
                     key={font.value}
                     value={font.value}
-                    className="py-2.5">
+                    className="py-2.5"
+                  >
                     <div className="flex flex-col text-start">
-                      <span 
+                      <span
                         className="text-base"
-                        style={{ fontFamily: `var(--font-${font.value})` }}>
+                        style={{ fontFamily: `var(--font-${font.value})` }}
+                      >
                         لا تَحْزَنْ إِنَّ اللَّهَ مَعَنَا
                       </span>
                       <span className="text-muted-foreground text-xs">

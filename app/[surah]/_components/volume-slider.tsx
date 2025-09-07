@@ -29,8 +29,8 @@ export default function VolumeSlider({
   return (
     <DropdownMenu onOpenChange={onVolumeClick}>
       <DropdownMenuTrigger asChild>
-        <Button variant={"secondary"} size={"icon"} className="min-w-9 min-h-9">
-          <Volume1Icon className="w-5 h-5" />
+        <Button variant={"secondary"} size={"icon"} className="min-w-8 w-8 h-8">
+          <Volume1Icon className="w-3.5 h-3.5" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-[200px] pb-3" side="left">

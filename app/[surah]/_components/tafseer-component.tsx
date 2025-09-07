@@ -82,13 +82,17 @@ export default function TafseerComponent({
         <Button
           asChild
           variant={"outline"}
-          className="gap-2 font-noto-kufi-arabic text-xs">
+          className="gap-2 font-noto-kufi-arabic text-xs"
+        >
           <DropdownMenuTrigger>
             <BookIcon className="size-4" />
             تفسیر
           </DropdownMenuTrigger>
         </Button>
-        <DropdownMenuContent className="font-noto-kufi-arabic text-right">
+        <DropdownMenuContent
+          side="left"
+          className="font-noto-kufi-arabic text-right"
+        >
           <DropdownMenuLabel>تفسیر</DropdownMenuLabel>
           <ScrollArea className="h-[40vh] pr-2">
             <DropdownMenuSeparator />
@@ -96,7 +100,8 @@ export default function TafseerComponent({
               className="justify-end"
               onClick={() => {
                 handleTafseerClick(1946);
-              }}>
+              }}
+            >
               کوردی
             </DropdownMenuItem>
 
@@ -106,7 +111,8 @@ export default function TafseerComponent({
                 key={tafseer.id}
                 onClick={() => {
                   handleTafseerClick(tafseer.id);
-                }}>
+                }}
+              >
                 {tafseer.name}
               </DropdownMenuItem>
             ))}

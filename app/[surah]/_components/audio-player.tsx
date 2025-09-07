@@ -103,13 +103,13 @@ export default function AudioPlayer({
       <div className="flex items-center gap-2 flex-row-reverse">
         <Button
           variant={"secondary"}
-          className="min-w-9 min-h-9"
+          className="w-8 h-8"
           size={"icon"}
           onClick={handlePlayPause}>
           {isPlaying && currentAyah === numberInSurah ? (
-            <PauseIcon className="w-5 h-5" />
+            <PauseIcon className="w-3.5 h-3.5" />
           ) : (
-            <PlayIcon className="w-5 h-5" />
+            <PlayIcon className="w-3.5 h-3.5" />
           )}
         </Button>
         <Slider
