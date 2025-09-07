@@ -3,7 +3,6 @@
 import { currentFontAtom } from "@/atoms";
 import ButtonGroup from "@/components/button-group";
 import { Card, CardHeader } from "@/components/ui/card";
-import { cn } from "@/lib/utils";
 import { SurahType, TafseerListType } from "@/types";
 import { useAtomValue } from "jotai";
 import AudioPlayer from "./audio-player";
@@ -26,10 +25,8 @@ export default function SurahComponent({
       <div className="space-y-14">
         <header className="flex justify-between items-center gap-4 sticky top-1 bg-background z-50 pb-2 pt-5">
           <h1
-            className={cn(
-              "text-3xl md:text-5xl text-center pb-6",
-              `font-${font}`
-            )}
+            className="text-3xl md:text-5xl text-center pb-6"
+            style={{ fontFamily: `var(--font-${font})` }}
           >
             {surah.name}
           </h1>
@@ -41,7 +38,8 @@ export default function SurahComponent({
             <Card>
               <CardHeader className="flex-row gap-2 items-center text-3xl rtl py-10">
                 <div
-                  className={cn("text-2xl text-center w-full", `font-${font}`)}
+                  className="text-2xl text-center w-full"
+                  style={{ fontFamily: `var(--font-${font})` }}
                 >
                   بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
                 </div>
@@ -54,10 +52,8 @@ export default function SurahComponent({
                 <div className="flex flex-col gap-2 items-start text-3xl rtl cursor-default p-6">
                   <div className="text-2xl">
                     <span
-                      className={cn(
-                        "-mt-4 leading-[4rem] tracking-wide",
-                        `font-${font}`
-                      )}
+                      className="-mt-4 leading-[4rem] tracking-wide"
+                      style={{ fontFamily: `var(--font-${font})` }}
                     >
                       {ayah.numberInSurah === 1
                         ? ayah.text.replace(

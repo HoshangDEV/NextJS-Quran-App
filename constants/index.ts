@@ -4,10 +4,6 @@ export const FontNames = [
     value: "amiri-quran",
   },
   {
-    label: "Amiri",
-    value: "amiri",
-  },
-  {
     label: "Scheherazade New",
     value: "scheherazade-new",
   },

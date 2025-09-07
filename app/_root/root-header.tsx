@@ -2,7 +2,6 @@
 
 import { currentFontAtom } from "@/atoms";
 import ButtonGroup from "@/components/button-group";
-import { cn } from "@/lib/utils";
 import { useAtomValue } from "jotai";
 
 export default function RootHeader() {
@@ -11,7 +10,9 @@ export default function RootHeader() {
   return (
     <div className="flex justify-between items-center gap-4 sticky top-0 bg-background z-50 pb-2">
       <h1
-        className={cn("text-3xl md:text-5xl text-center pb-6", `font-${font}`)}>
+        className="text-3xl md:text-5xl text-center pb-6"
+        style={{ fontFamily: `var(--font-${font})` }}
+      >
         القرآن الكریم
       </h1>
 

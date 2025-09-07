@@ -1,16 +1,15 @@
 "use client";
+import shape_1 from "@/assets/shape-1.png";
+import { currentFontAtom } from "@/atoms";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { SurahsType } from "@/types";
+import { useAtomValue } from "jotai";
 import { SearchIcon, XCircleIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import shape_1 from "@/assets/shape-1.png";
-import { cn } from "@/lib/utils";
-import { currentFontAtom } from "@/atoms";
-import { useAtomValue } from "jotai";
 
 export default function SurahsComponent({
   surahs,
@@ -50,7 +49,8 @@ export default function SurahsComponent({
         <Button
           className="absolute left-0 top-1/2 -translate-y-1/2 size-9 p-0"
           variant={"ghost"}
-          onClick={() => setSearch("")}>
+          onClick={() => setSearch("")}
+        >
           <XCircleIcon
             className={` w-5 h-5 text-muted-foreground transition-opacity ${
               search ? "opacity-100" : "opacity-0"
@@ -79,10 +79,16 @@ export default function SurahsComponent({
                       asChild
                       variant={"outline"}
                       size={"icon"}
-                      className="rounded-xl">
+                      className="rounded-xl"
+                    >
                       <p>{surah.number}</p>
                     </Button>
-                    <p className={cn("mb-4", `font-${font}`)}>{surah.name}</p>
+                    <p
+                      className="mb-4"
+                      style={{ fontFamily: `var(--font-${font})` }}
+                    >
+                      {surah.name}
+                    </p>
                   </div>
                 </CardHeader>
               </Card>

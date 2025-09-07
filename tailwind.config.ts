@@ -28,7 +28,7 @@ const config = {
         "noto-naskh-arabic": ["var(--font-noto-naskh-arabic)"],
         "scheherazade-new": ["var(--font-scheherazade-new)"],
         "noto-kufi-arabic": ["var(--font-noto-kufi-arabic)"],
-        poppins: ["var(--font-sans)"],
+        poppins: ["var(--font-poppins)"],
       },
       colors: {
         border: "hsl(var(--border))",

@@ -32,7 +32,7 @@ export default function Settings() {
       <DrawerContent>
         <div className="mx-auto w-full max-w-sm py-10">
           <div className="grid grid-cols-3 items-center gap-4">
-            <Label className="text-left font-noto-kufi-arabic">فۆنت</Label>
+            <Label className="text-left" style={{ fontFamily: "var(--font-noto-kufi-arabic)" }}>فۆنت</Label>
             <Select
               onValueChange={(value) => setFont(value)}
               value={font}
@@ -47,7 +47,9 @@ export default function Settings() {
                     value={font.value}
                     className="py-2.5">
                     <div className="flex flex-col text-start">
-                      <span className={`text-base font-${font.value}`}>
+                      <span 
+                        className="text-base"
+                        style={{ fontFamily: `var(--font-${font.value})` }}>
                         لا تَحْزَنْ إِنَّ اللَّهَ مَعَنَا
                       </span>
                       <span className="text-muted-foreground text-xs">
