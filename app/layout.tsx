@@ -12,6 +12,7 @@ import type { Metadata } from "next";
 import RootFooter from "./_root/root-footer";
 
 import "./globals.css";
+import { Toaster } from "@/components/ui/sonner";
 
 export const metadata: Metadata = {
   title: "Quran App",
@@ -42,6 +43,7 @@ export default async function RootLayout({
           <main className="container">{children}</main>
           <RootFooter />
           <Analytics />
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>
