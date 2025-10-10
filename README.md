@@ -60,7 +60,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-HoshangDEV - [HoshangDEV](https://hoshang.dev) - hoshangdev@gmail.com
+HoshangDEV - [HoshangDEV](https://hoshang.dev) - contact@hoshang.dev
 
 Project Link: [https://github.com/HoshangDEV/NextJS-Quran-App](https://github.com/HoshangDEV/NextJS-Quran-App)
 
