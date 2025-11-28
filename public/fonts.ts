@@ -1,7 +1,5 @@
 import {
-  Amiri,
   Amiri_Quran,
-  Baloo_Bhaijaan_2,
   Noto_Kufi_Arabic,
   Noto_Naskh_Arabic,
   Poppins,
@@ -11,12 +9,6 @@ import {
 export const amiriQuran = Amiri_Quran({
   subsets: ["latin", "arabic"],
   variable: "--font-amiri-quran",
-  weight: ["400"],
-});
-
-export const balooBhaijaan2 = Baloo_Bhaijaan_2({
-  subsets: ["latin", "arabic"],
-  variable: "--font-baloo-bhaijaan-2",
   weight: ["400"],
 });
 

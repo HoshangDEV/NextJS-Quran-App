@@ -1,7 +1,6 @@
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import {
   amiriQuran,
-  balooBhaijaan2,
   notoKufiArabic,
   notoNaskhArabic,
   poppins,
@@ -29,7 +28,6 @@ export default async function RootLayout({
       lang="en"
       className={`
       ${amiriQuran.variable}
-      ${balooBhaijaan2.variable}
       ${notoNaskhArabic.variable}
       ${scheherazadeNew.variable}
       ${poppins.variable}

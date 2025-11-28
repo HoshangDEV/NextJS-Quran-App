@@ -12,10 +12,6 @@ export const FontNames = [
     value: "noto-naskh-arabic",
   },
   {
-    label: "Baloo Bhaijaan 2",
-    value: "baloo-bhaijaan-2",
-  },
-  {
     label: "Noto Kufi Arabic",
     value: "noto-kufi-arabic",
   },

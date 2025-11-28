@@ -24,7 +24,6 @@ const config = {
       fontFamily: {
         "amiri-quran": ["var(--font-amiri-quran)"],
         amiri: ["var(--font-amiri)"],
-        "baloo-bhaijaan-2": ["var(--font-baloo-bhaijaan-2)"],
         "noto-naskh-arabic": ["var(--font-noto-naskh-arabic)"],
         "scheherazade-new": ["var(--font-scheherazade-new)"],
         "noto-kufi-arabic": ["var(--font-noto-kufi-arabic)"],
