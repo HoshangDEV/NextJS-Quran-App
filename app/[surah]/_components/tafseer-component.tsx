@@ -22,6 +22,7 @@ import { TafseerListType, TafseerType } from "@/types";
 import { BookIcon, Loader } from "lucide-react";
 import { useState, useTransition } from "react";
 import { toast } from "sonner";
+import { TAFSEER_CONFIG } from "@/constants";
 
 type TafseerComponentProps = {
   surahNumber: number;
@@ -43,16 +44,17 @@ export default function TafseerComponent({
   const handleTafseerClick = (tafseerId: number) => {
     setIsDialogOpen(true);
     startTransition(async () => {
-      if (tafseerId === 1946) {
+      if (tafseerId === TAFSEER_CONFIG.KURDISH_TAFSEER_ID) {
         const { error, success, data } = await GetKurdishTafseer({
           ayahNumber,
         });
         if (error) {
-          toast.error("Failed to get tafseer");
+          toast.error("فشل تحميل التفسير");
+          console.error("Kurdish tafseer error:", error);
         }
-        if (success) {
+        if (success && data) {
           setTafseerData({
-            tafseer_id: 1946,
+            tafseer_id: TAFSEER_CONFIG.KURDISH_TAFSEER_ID,
             tafseer_name: "کوردی",
             ayah_url: "",
             ayah_number: ayahNumber,
@@ -66,9 +68,10 @@ export default function TafseerComponent({
           tafseerId,
         });
         if (error) {
-          toast.error("Failed to get tafseer");
+          toast.error("فشل تحميل التفسير");
+          console.error("Tafseer error:", error);
         }
-        if (success) {
+        if (success && data) {
           setTafseerData(data);
         }
       }
@@ -99,7 +102,7 @@ export default function TafseerComponent({
             <DropdownMenuItem
               className="justify-end"
               onClick={() => {
-                handleTafseerClick(1946);
+                handleTafseerClick(TAFSEER_CONFIG.KURDISH_TAFSEER_ID);
               }}
             >
               کوردی

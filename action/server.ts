@@ -1,6 +1,11 @@
 "use server";
 
 import { TafseerType } from "@/types";
+import { API_URLS } from "@/constants";
+
+type TafseerResponse =
+  | { status: number; data: TafseerType; success: string; error?: never }
+  | { status: number; error: string; data?: never; success?: never };
 
 export const GetTafseer = async ({
   tafseerId,
@@ -10,26 +15,53 @@ export const GetTafseer = async ({
   tafseerId: number;
   surahNumber: number;
   ayahNumber: number;
-}) => {
+}): Promise<TafseerResponse> => {
   try {
-    if (!surahNumber || !ayahNumber)
-      return { status: 400, error: "Bad Request" };
+    // Validate input parameters
+    if (!surahNumber || !ayahNumber || !tafseerId) {
+      console.error("Invalid parameters for GetTafseer:", { tafseerId, surahNumber, ayahNumber });
+      return {
+        status: 400,
+        error: "Missing required parameters: tafseerId, surahNumber, or ayahNumber",
+      };
+    }
+
+    // Validate ranges
+    if (surahNumber < 1 || surahNumber > 114) {
+      return { status: 400, error: "Surah number must be between 1 and 114" };
+    }
 
     const response = await fetch(
-      `http://api.quran-tafseer.com/tafseer/${tafseerId}/${surahNumber}/${ayahNumber}`
+      `${API_URLS.QURAN_TAFSEER}/tafseer/${tafseerId}/${surahNumber}/${ayahNumber}`,
+      {
+        next: { revalidate: 86400 }, // Cache for 24 hours
+      }
     );
 
-    if (response.status !== 200)
-      return { status: response.status, error: "Not Found" };
+    if (!response.ok) {
+      console.error(
+        `Failed to fetch tafseer: tafseer=${tafseerId}, surah=${surahNumber}, ayah=${ayahNumber}, status=${response.status}`
+      );
+      return {
+        status: response.status,
+        error: response.status === 404
+          ? "Tafseer not found for this ayah"
+          : "Failed to fetch tafseer",
+      };
+    }
 
     const data = (await response.json()) as TafseerType;
 
     return {
       status: response.status,
       data,
-      success: "Data fetched successfully",
+      success: "Tafseer fetched successfully",
     };
   } catch (error) {
-    return { status: 500, error: "Internal Server Error" };
+    console.error("Error fetching tafseer:", error);
+    return {
+      status: 500,
+      error: "Internal server error while fetching tafseer",
+    };
   }
 };
