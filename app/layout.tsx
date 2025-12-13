@@ -6,7 +6,6 @@ import {
   poppins,
   scheherazadeNew,
 } from "@/public/fonts";
-import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import RootFooter from "./_root/root-footer";
 
@@ -40,7 +39,6 @@ export default async function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system">
           <main className="container">{children}</main>
           <RootFooter />
-          <Analytics />
           <Toaster />
         </ThemeProvider>
       </body>
