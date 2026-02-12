@@ -128,15 +128,16 @@ export default function TafseerComponent({
       {/* Tafseer Dialog */}
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
         <DialogContent>
+          <DialogHeader>
+            <DialogTitle className="text-center font-noto-kufi-arabic">
+              {tafseerData?.tafseer_name}
+            </DialogTitle>
+          </DialogHeader>
+
           {isPending ? (
             <Loading />
           ) : (
             <>
-              <DialogHeader>
-                <DialogTitle className="text-center font-noto-kufi-arabic">
-                  {tafseerData?.tafseer_name}
-                </DialogTitle>
-              </DialogHeader>
               <ScrollArea className="max-h-[80vh] p-4 text-justify rtl font-noto-naskh-arabic">
                 <p>{tafseerData?.text}</p>
               </ScrollArea>
