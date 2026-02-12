@@ -72,7 +72,8 @@ export default function SurahComponent({
                 <div className="flex flex-row gap-2 w-full items-center">
                   <TafseerComponent
                     surahNumber={surah.number}
-                    ayahNumber={ayah.numberInSurah}
+                    numberInSurah={ayah.numberInSurah}
+                    ayahNumber={ayah.number}
                     TafseerList={TafseerList}
                   />
                   <Separator orientation="vertical" className="h-4" />

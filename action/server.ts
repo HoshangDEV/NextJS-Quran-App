@@ -10,19 +10,24 @@ type TafseerResponse =
 export const GetTafseer = async ({
   tafseerId,
   surahNumber,
-  ayahNumber,
+  numberInSurah,
 }: {
   tafseerId: number;
   surahNumber: number;
-  ayahNumber: number;
+  numberInSurah: number;
 }): Promise<TafseerResponse> => {
   try {
     // Validate input parameters
-    if (!surahNumber || !ayahNumber || !tafseerId) {
-      console.error("Invalid parameters for GetTafseer:", { tafseerId, surahNumber, ayahNumber });
+    if (!surahNumber || !numberInSurah || !tafseerId) {
+      console.error("Invalid parameters for GetTafseer:", {
+        tafseerId,
+        surahNumber,
+        numberInSurah,
+      });
       return {
         status: 400,
-        error: "Missing required parameters: tafseerId, surahNumber, or ayahNumber",
+        error:
+          "Missing required parameters: tafseerId, surahNumber, or numberInSurah",
       };
     }
 
@@ -32,7 +37,7 @@ export const GetTafseer = async ({
     }
 
     const response = await fetch(
-      `${API_URLS.QURAN_TAFSEER}/tafseer/${tafseerId}/${surahNumber}/${ayahNumber}`,
+      `${API_URLS.QURAN_TAFSEER}/tafseer/${tafseerId}/${surahNumber}/${numberInSurah}`,
       {
         next: { revalidate: 86400 }, // Cache for 24 hours
       }
@@ -40,13 +45,14 @@ export const GetTafseer = async ({
 
     if (!response.ok) {
       console.error(
-        `Failed to fetch tafseer: tafseer=${tafseerId}, surah=${surahNumber}, ayah=${ayahNumber}, status=${response.status}`
+        `Failed to fetch tafseer: tafseer=${tafseerId}, surah=${surahNumber}, numberInSurah=${numberInSurah}, status=${response.status}`
       );
       return {
         status: response.status,
-        error: response.status === 404
-          ? "Tafseer not found for this ayah"
-          : "Failed to fetch tafseer",
+        error:
+          response.status === 404
+            ? "Tafseer not found for this ayah"
+            : "Failed to fetch tafseer",
       };
     }
 

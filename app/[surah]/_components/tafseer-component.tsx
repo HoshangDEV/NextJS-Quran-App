@@ -26,12 +26,14 @@ import { TAFSEER_CONFIG } from "@/constants";
 
 type TafseerComponentProps = {
   surahNumber: number;
+  numberInSurah: number;
   ayahNumber: number;
   TafseerList: TafseerListType;
 };
 
 export default function TafseerComponent({
   surahNumber,
+  numberInSurah,
   ayahNumber,
   TafseerList,
 }: TafseerComponentProps) {
@@ -57,14 +59,14 @@ export default function TafseerComponent({
             tafseer_id: TAFSEER_CONFIG.KURDISH_TAFSEER_ID,
             tafseer_name: "کوردی",
             ayah_url: "",
-            ayah_number: ayahNumber,
+            ayah_number: numberInSurah,
             text: data.text,
           });
         }
       } else {
         const { error, success, data } = await GetTafseer({
           surahNumber,
-          ayahNumber,
+          numberInSurah,
           tafseerId,
         });
         if (error) {
