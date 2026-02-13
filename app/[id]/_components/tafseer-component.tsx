@@ -49,6 +49,7 @@ export default function TafseerComponent({
       if (error) {
         toast.error("فشل تحميل التفسير");
         console.error("Tafseer error:", error);
+        setIsDialogOpen(false);
       }
       if (success && data) {
         setTafseerData(data);

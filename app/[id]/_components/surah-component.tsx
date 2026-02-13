@@ -79,10 +79,13 @@ export default function SurahComponent({ surah }: { surah: SurahType }) {
                         style={{ fontFamily: `var(--font-${font})` }}
                       >
                         {ayah.numberInSurah === 1
-                          ? ayah.text.replace(
-                              "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ",
-                              ""
-                            )
+                          ? ayah.text
+                              .normalize("NFC")
+                              .replace(
+                                /^[\u064B-\u0652]*ب[\u064B-\u0652]*س[\u064B-\u0652]*م[\u064B-\u0652]*\s*[\u064B-\u0652]*[اٱإأآ][\u064B-\u0652]*ل[\u064B-\u0652]*ل[\u064B-\u0652]*[\u0651]?[\u064B-\u0652]*ه[\u064B-\u0652]*\s*[\u064B-\u0652]*[اٱإأآ][\u064B-\u0652]*ل[\u064B-\u0652]*ر[\u064B-\u0652]*ح[\u064B-\u0652]*م[\u064B-\u0652]*[\u0670]?[\u064B-\u0652]*ن[\u064B-\u0652]*\s*[\u064B-\u0652]*[اٱإأآ][\u064B-\u0652]*ل[\u064B-\u0652]*ر[\u064B-\u0652]*ح[\u064B-\u0652]*ی[\u064B-\u0652]*م[\u064B-\u0652]*\s*/,
+                                ""
+                              )
+                              .trim()
                           : ayah.text}
                       </span>
                       <div className="inline-block mr-2 -mb-3">

@@ -19,12 +19,18 @@ export default function SurahsComponent() {
 
   const filteredSurahs = useMemo(() => {
     if (!deferredSearch) return SURAHS;
+
+    const normalizedSearch = deferredSearch
+      .replaceAll(/[\u064B-\u0652\u064E-\u0650\u0651\u0652\u06E1]/g, "")
+      .replaceAll("ي", "ی")
+      .replaceAll(/إ|أ|آ|ٱ/g, "ا");
+
     return SURAHS.filter((surah) =>
       surah.name
         .replaceAll(/[\u064B-\u0652\u064E-\u0650\u0651\u0652\u06E1]/g, "")
         .replaceAll("ي", "ی")
         .replaceAll(/إ|أ|آ|ٱ/g, "ا")
-        .includes(deferredSearch)
+        .includes(normalizedSearch)
     );
   }, [deferredSearch]);
 

@@ -26,13 +26,13 @@ export default function VolumeSlider() {
     e.preventDefault();
   };
 
-  const getVolumeIcon = () => {
+  const getVolumeIcon = (className: string = "w-5 h-5") => {
     if (volume === 0) {
-      return <VolumeXIcon className="w-5 h-5" />;
+      return <VolumeXIcon className={className} />;
     } else if (volume > 0.5) {
-      return <Volume2Icon className="w-5 h-5" />;
+      return <Volume2Icon className={className} />;
     } else {
-      return <Volume1Icon className="w-5 h-5" />;
+      return <Volume1Icon className={className} />;
     }
   };
 
@@ -45,7 +45,7 @@ export default function VolumeSlider() {
           className="min-w-8 w-8 h-8"
           aria-label={`مستوى الصوت: ${volumePercentage}%`}
         >
-          <Volume1Icon className="w-3.5 h-3.5" />
+          {getVolumeIcon("w-3.5 h-3.5")}
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-[200px] pb-3" side="left">

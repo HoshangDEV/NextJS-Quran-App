@@ -82,10 +82,16 @@ export default function AudioProvider({
     if (currentAyah < numberOfAyahs) {
       const nextAyah = currentAyah + 1;
       const nextSrc = audioMap.get(nextAyah);
-      setCurrentAyah(nextAyah);
+
       if (nextSrc) {
+        setCurrentAyah(nextAyah);
         setAudioSrc(nextSrc);
         // isPlaying stays true — the play effect will trigger on src change
+      } else {
+        // No audio for next ayah, stop playback
+        setIsPlaying(false);
+        setCurrentTime(0);
+        setDuration(0);
       }
     } else {
       setIsPlaying(false);
