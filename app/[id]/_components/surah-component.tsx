@@ -13,11 +13,7 @@ import AyahNumber from "./ayah-number";
 import ScrollProgressBar from "./scroll-progress-bar";
 import TafseerComponent from "./tafseer-component";
 
-export default function SurahComponent({
-  surah,
-}: {
-  surah: SurahType["data"];
-}) {
+export default function SurahComponent({ surah }: { surah: SurahType }) {
   const font = useAtomValue(currentFontAtom);
 
   const virtualizer = useWindowVirtualizer({

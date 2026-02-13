@@ -4,7 +4,10 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <div className="flex min-h-[100dvh] flex-col items-center justify-center gap-6 px-4 md:px-6">
+    <div
+      className="flex min-h-[100dvh] flex-col items-center justify-center gap-6 px-4 md:px-6"
+      dir="ltr"
+    >
       <div className="grid gap-2 text-center">
         <div className="text-8xl font-bold text-gray-900 dark:text-gray-50">
           404

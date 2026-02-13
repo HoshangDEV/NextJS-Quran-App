@@ -1,15 +1,13 @@
 export type SurahType = {
-  data: {
+  number: number;
+  name: string;
+  numberOfAyahs: number;
+  ayahs: {
     number: number;
-    name: string;
-    numberOfAyahs: number;
-    ayahs: {
-      number: number;
-      numberInSurah: number;
-      text: string;
-      audio: string;
-    }[];
-  };
+    numberInSurah: number;
+    text: string;
+    audio: string;
+  }[];
 };
 
 export type SurahsType = {

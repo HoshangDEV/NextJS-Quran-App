@@ -1,76 +1,9 @@
-import { SurahsType, SurahType, AyahEditionResponse } from "@/types";
-import { API_URLS, QURAN_AUDIO_EDITION } from "@/constants";
+import { API_URLS } from "@/constants";
+import { AyahEditionResponse } from "@/types";
 
 type ApiResponse<T> =
   | { status: number; data: T; success: string; error?: never }
   | { status: number; error: string; data?: never; success?: never };
-
-export const GetSurahs = async (): Promise<ApiResponse<SurahsType["data"]>> => {
-  try {
-    const response = await fetch(`${API_URLS.ALQURAN_CLOUD}/surah`, {
-      next: { revalidate: 3600 }, // Cache for 1 hour
-    });
-
-    if (!response.ok) {
-      console.error(`Failed to fetch surahs: ${response.status}`);
-      return {
-        status: response.status,
-        error: response.status === 404 ? "Surahs not found" : "Failed to fetch surahs",
-      };
-    }
-
-    const { data } = (await response.json()) as SurahsType;
-
-    return {
-      status: response.status,
-      data,
-      success: "Surahs fetched successfully",
-    };
-  } catch (error) {
-    console.error("Error fetching surahs:", error);
-    return {
-      status: 500,
-      error: "Internal server error while fetching surahs",
-    };
-  }
-};
-
-export const GetSurah = async ({
-  surahNumber,
-}: {
-  surahNumber: number;
-}): Promise<ApiResponse<SurahType["data"]>> => {
-  try {
-    const response = await fetch(
-      `${API_URLS.ALQURAN_CLOUD}/surah/${surahNumber}/${QURAN_AUDIO_EDITION}`,
-      {
-        next: { revalidate: 3600 }, // Cache for 1 hour
-      }
-    );
-
-    if (!response.ok) {
-      console.error(`Failed to fetch surah ${surahNumber}: ${response.status}`);
-      return {
-        status: response.status,
-        error: response.status === 404 ? `Surah ${surahNumber} not found` : "Failed to fetch surah",
-      };
-    }
-
-    const { data } = (await response.json()) as SurahType;
-
-    return {
-      status: response.status,
-      data,
-      success: `Surah ${surahNumber} fetched successfully`,
-    };
-  } catch (error) {
-    console.error(`Error fetching surah ${surahNumber}:`, error);
-    return {
-      status: 500,
-      error: "Internal server error while fetching surah",
-    };
-  }
-};
 
 export const GetTafseer = async ({
   ayahNumber,
@@ -88,12 +21,15 @@ export const GetTafseer = async ({
     );
 
     if (!response.ok) {
-      console.error(`Failed to fetch tafseer for ayah ${ayahNumber} (${edition}): ${response.status}`);
+      console.error(
+        `Failed to fetch tafseer for ayah ${ayahNumber} (${edition}): ${response.status}`
+      );
       return {
         status: response.status,
-        error: response.status === 404
-          ? `Tafseer for ayah ${ayahNumber} not found`
-          : "Failed to fetch tafseer",
+        error:
+          response.status === 404
+            ? `Tafseer for ayah ${ayahNumber} not found`
+            : "Failed to fetch tafseer",
       };
     }
 

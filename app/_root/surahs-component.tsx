@@ -1,35 +1,32 @@
 "use client";
+
 import shape_1 from "@/assets/shape-1.png";
 import { currentFontAtom } from "@/atoms";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { SurahsType } from "@/types";
+import { SURAHS } from "@/data/quran";
 import { useAtomValue } from "jotai";
 import { SearchIcon, XCircleIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useDeferredValue, useMemo } from "react";
+import { useDeferredValue, useMemo, useState } from "react";
 
-export default function SurahsComponent({
-  surahs,
-}: {
-  surahs: SurahsType["data"];
-}) {
+export default function SurahsComponent() {
   const [search, setSearch] = useState("");
   const deferredSearch = useDeferredValue(search);
   const font = useAtomValue(currentFontAtom);
 
   const filteredSurahs = useMemo(() => {
-    if (!deferredSearch) return surahs;
-    return surahs.filter((surah) =>
+    if (!deferredSearch) return SURAHS;
+    return SURAHS.filter((surah) =>
       surah.name
         .replaceAll(/[\u064B-\u0652\u064E-\u0650\u0651\u0652\u06E1]/g, "")
         .replaceAll("ي", "ی")
         .replaceAll(/إ|أ|آ|ٱ/g, "ا")
         .includes(deferredSearch)
     );
-  }, [deferredSearch, surahs]);
+  }, [deferredSearch]);
 
   return (
     <div className="flex flex-col gap-4">

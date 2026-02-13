@@ -45,8 +45,6 @@ export const TAFSEER_EDITIONS = {
   ],
 } as const;
 
-export const QURAN_AUDIO_EDITION = "ar.alafasy";
-
 // UI configuration
 export const UI_CONFIG = {
   SCROLL_PROGRESS_COLOR: "#CC3333",
