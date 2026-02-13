@@ -3,16 +3,15 @@
 import { currentFontAtom } from "@/atoms";
 import ButtonGroup from "@/components/button-group";
 import { Card, CardHeader } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
 import { SurahType } from "@/types";
-import { useVirtualizer } from "@tanstack/react-virtual";
+import { useWindowVirtualizer } from "@tanstack/react-virtual";
 import { useAtomValue } from "jotai";
-import { useRef } from "react";
 import AudioPlayer from "./audio-player";
 import AudioProvider from "./audio-provider";
 import AyahNumber from "./ayah-number";
 import ScrollProgressBar from "./scroll-progress-bar";
 import TafseerComponent from "./tafseer-component";
-import { Separator } from "@/components/ui/separator";
 
 export default function SurahComponent({
   surah,
@@ -20,23 +19,18 @@ export default function SurahComponent({
   surah: SurahType["data"];
 }) {
   const font = useAtomValue(currentFontAtom);
-  const parentRef = useRef<HTMLDivElement>(null);
 
-  const virtualizer = useVirtualizer({
+  const virtualizer = useWindowVirtualizer({
     count: surah.ayahs.length,
-    getScrollElement: () => parentRef.current,
     estimateSize: () => 200,
     overscan: 5,
   });
 
   return (
     <>
-      <ScrollProgressBar scrollRef={parentRef} />
+      <ScrollProgressBar />
       <AudioProvider ayahs={surah.ayahs} numberOfAyahs={surah.numberOfAyahs}>
-        <div
-          ref={parentRef}
-          className="h-[calc(100vh-2rem)] overflow-auto space-y-4"
-        >
+        <div className="space-y-4">
           <header className="flex justify-between items-center gap-4 sticky top-0 bg-background z-50 pb-2 pt-5">
             <h1
               className="text-3xl md:text-5xl text-center pb-6"
