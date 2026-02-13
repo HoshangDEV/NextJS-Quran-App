@@ -25,8 +25,6 @@ import { AyahEditionResponse } from "@/types";
 import { cn } from "@/lib/utils";
 
 type TafseerComponentProps = {
-  surahNumber: number;
-  numberInSurah: number;
   ayahNumber: number;
 };
 

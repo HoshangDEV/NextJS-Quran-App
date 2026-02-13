@@ -91,7 +91,9 @@ export const GetTafseer = async ({
       console.error(`Failed to fetch tafseer for ayah ${ayahNumber} (${edition}): ${response.status}`);
       return {
         status: response.status,
-        error: `Tafseer for ayah ${ayahNumber} not found`,
+        error: response.status === 404
+          ? `Tafseer for ayah ${ayahNumber} not found`
+          : "Failed to fetch tafseer",
       };
     }
 
