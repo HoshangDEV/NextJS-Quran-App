@@ -23,14 +23,6 @@ export const API_URLS = {
   ALQURAN_CLOUD: "https://api.alquran.cloud/v1",
 } as const;
 
-// Audio configuration
-export const AUDIO_CONFIG = {
-  DEFAULT_VOLUME: 1,
-  MIN_VOLUME: 0,
-  MAX_VOLUME: 100,
-  VOLUME_STORAGE_KEY: "volume",
-} as const;
-
 // Full list of available editions: https://api.alquran.cloud/v1/edition
 export const TAFSEER_EDITIONS = {
   kurdish: [

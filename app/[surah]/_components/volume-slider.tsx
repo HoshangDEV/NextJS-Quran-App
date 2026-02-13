@@ -1,3 +1,6 @@
+"use client";
+
+import { volumeAtom } from "@/atoms";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -7,24 +10,16 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Slider } from "@/components/ui/slider";
+import { useAtom } from "jotai";
 import { Volume1Icon, Volume2Icon, VolumeXIcon } from "lucide-react";
-import { AUDIO_CONFIG } from "@/constants";
 import { MouseEvent } from "react";
 
-interface VolumeSliderProps {
-  volume: number;
-  setVolume: (volume: number) => void;
-}
-
-export default function VolumeSlider({
-  volume,
-  setVolume,
-}: VolumeSliderProps) {
+export default function VolumeSlider() {
+  const [volume, setVolume] = useAtom(volumeAtom);
   const volumePercentage = Math.round(volume * 100);
 
   const handleVolumeChange = (values: number[]) => {
-    const newVolume = values[0] / 100;
-    setVolume(newVolume);
+    setVolume(values[0] / 100);
   };
 
   const handleMenuItemClick = (e: MouseEvent<HTMLDivElement>) => {
@@ -62,8 +57,8 @@ export default function VolumeSlider({
           <Slider
             value={[volumePercentage]}
             onValueChange={handleVolumeChange}
-            min={AUDIO_CONFIG.MIN_VOLUME}
-            max={AUDIO_CONFIG.MAX_VOLUME}
+            min={0}
+            max={100}
             aria-label="شريط التحكم بالصوت"
           />
         </DropdownMenuItem>

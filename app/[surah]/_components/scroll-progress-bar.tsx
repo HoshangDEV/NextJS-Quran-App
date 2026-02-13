@@ -1,29 +1,33 @@
 "use client";
 
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, RefObject } from "react";
 import { UI_CONFIG } from "@/constants";
 
-export default function ScrollProgressBar() {
+interface ScrollProgressBarProps {
+  scrollRef?: RefObject<HTMLElement | null>;
+}
+
+export default function ScrollProgressBar({ scrollRef }: ScrollProgressBarProps) {
   const [scrollPercentage, setScrollPercentage] = useState(0);
 
   const handleScroll = useCallback(() => {
-    const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+    const el = scrollRef?.current ?? document.documentElement;
+    const { scrollTop, scrollHeight, clientHeight } = el;
     const totalScrollableHeight = scrollHeight - clientHeight;
 
     if (totalScrollableHeight > 0) {
       const scrolled = (scrollTop / totalScrollableHeight) * 100;
       setScrollPercentage(Math.min(100, Math.max(0, scrolled)));
     }
-  }, []);
+  }, [scrollRef]);
 
   useEffect(() => {
-    // Set initial scroll percentage
     handleScroll();
 
-    // Use passive listener for better performance
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [handleScroll]);
+    const target = scrollRef?.current ?? window;
+    target.addEventListener("scroll", handleScroll, { passive: true });
+    return () => target.removeEventListener("scroll", handleScroll);
+  }, [handleScroll, scrollRef]);
 
   return (
     <div className="fixed left-0 top-0 z-50 w-full" style={{ height: UI_CONFIG.SCROLL_PROGRESS_HEIGHT }}>

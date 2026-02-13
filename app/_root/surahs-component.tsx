@@ -9,32 +9,27 @@ import { useAtomValue } from "jotai";
 import { SearchIcon, XCircleIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState, useDeferredValue, useMemo } from "react";
 
 export default function SurahsComponent({
   surahs,
 }: {
   surahs: SurahsType["data"];
 }) {
-  const [surahsData, setSurahsData] = useState<SurahsType["data"]>(surahs);
-  const [search, setSearch] = useState<string>("");
+  const [search, setSearch] = useState("");
+  const deferredSearch = useDeferredValue(search);
   const font = useAtomValue(currentFontAtom);
 
-  useEffect(() => {
-    if (search) {
-      setSurahsData(
-        surahs.filter((surah) =>
-          surah.name
-            .replaceAll(/[\u064B-\u0652\u064E-\u0650\u0651\u0652\u06E1]/g, "")
-            .replaceAll("ي", "ی")
-            .replaceAll(/إ|أ|آ|ٱ/g, "ا")
-            .includes(search)
-        )
-      );
-    } else {
-      setSurahsData(surahs);
-    }
-  }, [search, surahs]);
+  const filteredSurahs = useMemo(() => {
+    if (!deferredSearch) return surahs;
+    return surahs.filter((surah) =>
+      surah.name
+        .replaceAll(/[\u064B-\u0652\u064E-\u0650\u0651\u0652\u06E1]/g, "")
+        .replaceAll("ي", "ی")
+        .replaceAll(/إ|أ|آ|ٱ/g, "ا")
+        .includes(deferredSearch)
+    );
+  }, [deferredSearch, surahs]);
 
   return (
     <div className="flex flex-col gap-4">
@@ -60,40 +55,39 @@ export default function SurahsComponent({
         <SearchIcon className="absolute right-2 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 rtl">
-        {surahsData &&
-          surahsData.map((surah) => (
-            <Link key={surah.number} href={`/${surah.number}`}>
-              <Card className="hover:shadow-lg hover:scale-105 transition-all relative h-[100px] overflow-hidden">
-                <Image
-                  quality={100}
-                  src={shape_1}
-                  alt={surah.name}
-                  width={500}
-                  height={500}
-                  className="absolute left-0 top-0 hover:border-none hover:outline-none hover:ring-0 w-[120px] h-[120px]"
-                  loading="eager"
-                />
-                <CardHeader className="flex-row gap-2 items-center text-3xl rtl z-50">
-                  <div className="flex gap-4 items-center text-2xl">
-                    <Button
-                      asChild
-                      variant={"outline"}
-                      size={"icon"}
-                      className="rounded-xl"
-                    >
-                      <p>{surah.number}</p>
-                    </Button>
-                    <p
-                      className="mb-4"
-                      style={{ fontFamily: `var(--font-${font})` }}
-                    >
-                      {surah.name}
-                    </p>
-                  </div>
-                </CardHeader>
-              </Card>
-            </Link>
-          ))}
+        {filteredSurahs.map((surah) => (
+          <Link key={surah.number} href={`/${surah.number}`}>
+            <Card className="hover:shadow-lg hover:scale-105 transition-all relative h-[100px] overflow-hidden">
+              <Image
+                quality={50}
+                src={shape_1}
+                alt=""
+                width={120}
+                height={120}
+                className="absolute left-0 top-0 hover:border-none hover:outline-none hover:ring-0 w-[120px] h-[120px]"
+                loading="lazy"
+              />
+              <CardHeader className="flex-row gap-2 items-center text-3xl rtl z-50">
+                <div className="flex gap-4 items-center text-2xl">
+                  <Button
+                    asChild
+                    variant={"outline"}
+                    size={"icon"}
+                    className="rounded-xl"
+                  >
+                    <p>{surah.number}</p>
+                  </Button>
+                  <p
+                    className="mb-4"
+                    style={{ fontFamily: `var(--font-${font})` }}
+                  >
+                    {surah.name}
+                  </p>
+                </div>
+              </CardHeader>
+            </Card>
+          </Link>
+        ))}
       </div>
     </div>
   );
