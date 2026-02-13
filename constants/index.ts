@@ -21,7 +21,6 @@ export const FontNames = [
 // API URLs
 export const API_URLS = {
   ALQURAN_CLOUD: "https://api.alquran.cloud/v1",
-  QURAN_TAFSEER: "http://api.quran-tafseer.com",
 } as const;
 
 // Audio configuration
@@ -32,12 +31,29 @@ export const AUDIO_CONFIG = {
   VOLUME_STORAGE_KEY: "volume",
 } as const;
 
-// Tafseer configuration
-export const TAFSEER_CONFIG = {
-  KURDISH_TAFSEER_ID: 1946,
-  KURDISH_EDITION: "ku.asan",
-  ARABIC_ALAFASY_EDITION: "ar.alafasy",
+// Full list of available editions: https://api.alquran.cloud/v1/edition
+export const TAFSEER_EDITIONS = {
+  kurdish: [
+    { identifier: "ku.asan", name: "کوردی", language: "ku" },
+  ],
+  arabic: [
+    { identifier: "ar.muyassar", name: "تفسير المیسر", language: "ar" },
+    { identifier: "ar.jalalayn", name: "تفسير الجلالين", language: "ar" },
+    { identifier: "ar.qurtubi", name: "تفسير القرطبي", language: "ar" },
+    { identifier: "ar.miqbas", name: "تنوير المقباس من تفسير بن عباس", language: "ar" },
+    { identifier: "ar.waseet", name: "التفسير الوسيط", language: "ar" },
+    { identifier: "ar.baghawi", name: "تفسير البغوي", language: "ar" },
+  ],
+  english: [
+    { identifier: "en.sahih", name: "Saheeh International", language: "en" },
+    { identifier: "en.yusufali", name: "Yusuf Ali", language: "en" },
+    { identifier: "en.hilali", name: "Hilali & Khan", language: "en" },
+    { identifier: "en.pickthall", name: "Pickthall", language: "en" },
+    { identifier: "en.itani", name: "Clear Quran", language: "en" },
+  ],
 } as const;
+
+export const QURAN_AUDIO_EDITION = "ar.alafasy";
 
 // UI configuration
 export const UI_CONFIG = {

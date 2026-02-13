@@ -1,10 +1,5 @@
-import {
-  SurahsType,
-  SurahType,
-  TafseerKurdishType,
-  TafseerListType,
-} from "@/types";
-import { API_URLS, TAFSEER_CONFIG } from "@/constants";
+import { SurahsType, SurahType, AyahEditionResponse } from "@/types";
+import { API_URLS, QURAN_AUDIO_EDITION } from "@/constants";
 
 type ApiResponse<T> =
   | { status: number; data: T; success: string; error?: never }
@@ -47,7 +42,7 @@ export const GetSurah = async ({
 }): Promise<ApiResponse<SurahType["data"]>> => {
   try {
     const response = await fetch(
-      `${API_URLS.ALQURAN_CLOUD}/surah/${surahNumber}/${TAFSEER_CONFIG.ARABIC_ALAFASY_EDITION}`,
+      `${API_URLS.ALQURAN_CLOUD}/surah/${surahNumber}/${QURAN_AUDIO_EDITION}`,
       {
         next: { revalidate: 3600 }, // Cache for 1 hour
       }
@@ -77,69 +72,41 @@ export const GetSurah = async ({
   }
 };
 
-export const GetTafseerList = async (): Promise<ApiResponse<TafseerListType>> => {
-  try {
-    const response = await fetch(`${API_URLS.QURAN_TAFSEER}/tafseer`, {
-      next: { revalidate: 86400 }, // Cache for 24 hours
-    });
-
-    if (!response.ok) {
-      console.error(`Failed to fetch tafseer list: ${response.status}`);
-      return {
-        status: response.status,
-        error: "Failed to fetch tafseer list",
-      };
-    }
-
-    const data = (await response.json()) as TafseerListType;
-
-    return {
-      status: response.status,
-      data,
-      success: "Tafseer list fetched successfully",
-    };
-  } catch (error) {
-    console.error("Error fetching tafseer list:", error);
-    return {
-      status: 500,
-      error: "Internal server error while fetching tafseer list",
-    };
-  }
-};
-
-export const GetKurdishTafseer = async ({
+export const GetTafseer = async ({
   ayahNumber,
+  edition,
 }: {
   ayahNumber: number;
-}): Promise<ApiResponse<TafseerKurdishType["data"]>> => {
+  edition: string;
+}): Promise<ApiResponse<AyahEditionResponse["data"]>> => {
   try {
     const response = await fetch(
-      `${API_URLS.ALQURAN_CLOUD}/ayah/${ayahNumber}/${TAFSEER_CONFIG.KURDISH_EDITION}`,
+      `${API_URLS.ALQURAN_CLOUD}/ayah/${ayahNumber}/${edition}`,
       {
         next: { revalidate: 86400 }, // Cache for 24 hours
       }
     );
 
     if (!response.ok) {
-      console.error(`Failed to fetch Kurdish tafseer for ayah ${ayahNumber}: ${response.status}`);
+      console.error(`Failed to fetch tafseer for ayah ${ayahNumber} (${edition}): ${response.status}`);
       return {
         status: response.status,
-        error: `Kurdish tafseer for ayah ${ayahNumber} not found`,
+        error: `Tafseer for ayah ${ayahNumber} not found`,
       };
     }
 
-    const { data } = (await response.json()) as TafseerKurdishType;
+    const { data } = (await response.json()) as AyahEditionResponse;
 
     return {
       status: response.status,
       data,
-      success: `Kurdish tafseer for ayah ${ayahNumber} fetched successfully`,
+      success: `Tafseer for ayah ${ayahNumber} fetched successfully`,
     };
   } catch (error) {
-    console.error(`Error fetching Kurdish tafseer for ayah ${ayahNumber}:`, error);
+    console.error(`Error fetching tafseer for ayah ${ayahNumber}:`, error);
     return {
       status: 500,
-      error: "Internal server error while fetching Kurdish tafseer",
+      error: "Internal server error while fetching tafseer",
     };
   }
 };

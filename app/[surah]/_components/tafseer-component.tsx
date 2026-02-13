@@ -1,7 +1,7 @@
 "use client";
 
-import { GetKurdishTafseer } from "@/action";
-import { GetTafseer } from "@/action/server";
+import { GetTafseer } from "@/action";
+import { TAFSEER_EDITIONS } from "@/constants";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -18,64 +18,42 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { TafseerListType, TafseerType } from "@/types";
 import { BookIcon, Loader } from "lucide-react";
 import { useState, useTransition } from "react";
 import { toast } from "sonner";
-import { TAFSEER_CONFIG } from "@/constants";
+import { AyahEditionResponse } from "@/types";
+import { cn } from "@/lib/utils";
 
 type TafseerComponentProps = {
   surahNumber: number;
   numberInSurah: number;
   ayahNumber: number;
-  TafseerList: TafseerListType;
 };
 
 export default function TafseerComponent({
-  surahNumber,
-  numberInSurah,
   ayahNumber,
-  TafseerList,
 }: TafseerComponentProps) {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [isPending, startTransition] = useTransition();
-  const [tafseerData, setTafseerData] = useState<TafseerType | undefined>(
-    undefined
-  );
+  const [tafseerData, setTafseerData] = useState<
+    AyahEditionResponse["data"] | undefined
+  >(undefined);
 
-  const handleTafseerClick = (tafseerId: number) => {
+  const handleTafseerClick = (edition: string) => {
+    setTafseerData(undefined);
+
     setIsDialogOpen(true);
     startTransition(async () => {
-      if (tafseerId === TAFSEER_CONFIG.KURDISH_TAFSEER_ID) {
-        const { error, success, data } = await GetKurdishTafseer({
-          ayahNumber,
-        });
-        if (error) {
-          toast.error("فشل تحميل التفسير");
-          console.error("Kurdish tafseer error:", error);
-        }
-        if (success && data) {
-          setTafseerData({
-            tafseer_id: TAFSEER_CONFIG.KURDISH_TAFSEER_ID,
-            tafseer_name: "کوردی",
-            ayah_url: "",
-            ayah_number: numberInSurah,
-            text: data.text,
-          });
-        }
-      } else {
-        const { error, success, data } = await GetTafseer({
-          surahNumber,
-          numberInSurah,
-          tafseerId,
-        });
-        if (error) {
-          toast.error("فشل تحميل التفسير");
-          console.error("Tafseer error:", error);
-        }
-        if (success && data) {
-          setTafseerData(data);
-        }
+      const { error, success, data } = await GetTafseer({
+        ayahNumber,
+        edition,
+      });
+      if (error) {
+        toast.error("فشل تحميل التفسير");
+        console.error("Tafseer error:", error);
+      }
+      if (success && data) {
+        setTafseerData(data);
       }
     });
   };
@@ -101,24 +79,45 @@ export default function TafseerComponent({
           <DropdownMenuLabel>تفسیر</DropdownMenuLabel>
           <ScrollArea className="h-[40vh] pr-2">
             <DropdownMenuSeparator />
-            <DropdownMenuItem
-              className="justify-end"
-              onClick={() => {
-                handleTafseerClick(TAFSEER_CONFIG.KURDISH_TAFSEER_ID);
-              }}
-            >
-              کوردی
-            </DropdownMenuItem>
 
-            {TafseerList.map((tafseer) => (
+            <DropdownMenuLabel className="text-xs text-muted-foreground">
+              کوردی
+            </DropdownMenuLabel>
+            {TAFSEER_EDITIONS.kurdish.map((edition) => (
               <DropdownMenuItem
                 className="justify-end"
-                key={tafseer.id}
-                onClick={() => {
-                  handleTafseerClick(tafseer.id);
-                }}
+                key={edition.identifier}
+                onClick={() => handleTafseerClick(edition.identifier)}
               >
-                {tafseer.name}
+                {edition.name}
+              </DropdownMenuItem>
+            ))}
+
+            <DropdownMenuSeparator />
+            <DropdownMenuLabel className="text-xs text-muted-foreground">
+              عربي
+            </DropdownMenuLabel>
+            {TAFSEER_EDITIONS.arabic.map((edition) => (
+              <DropdownMenuItem
+                className="justify-end"
+                key={edition.identifier}
+                onClick={() => handleTafseerClick(edition.identifier)}
+              >
+                {edition.name}
+              </DropdownMenuItem>
+            ))}
+
+            <DropdownMenuSeparator />
+            <DropdownMenuLabel className="text-xs text-muted-foreground">
+              English
+            </DropdownMenuLabel>
+            {TAFSEER_EDITIONS.english.map((edition) => (
+              <DropdownMenuItem
+                className="justify-end"
+                key={edition.identifier}
+                onClick={() => handleTafseerClick(edition.identifier)}
+              >
+                {edition.name}
               </DropdownMenuItem>
             ))}
           </ScrollArea>
@@ -130,18 +129,24 @@ export default function TafseerComponent({
         <DialogContent>
           <DialogHeader>
             <DialogTitle className="text-center font-noto-kufi-arabic">
-              {tafseerData?.tafseer_name}
+              {tafseerData?.edition.name || "تفسیر"}
             </DialogTitle>
           </DialogHeader>
 
           {isPending ? (
             <Loading />
           ) : (
-            <>
-              <ScrollArea className="max-h-[80vh] p-4 text-justify rtl font-noto-naskh-arabic">
-                <p>{tafseerData?.text}</p>
-              </ScrollArea>
-            </>
+            <ScrollArea
+              className={cn(
+                "max-h-[80vh] p-4 text-justify",
+                tafseerData?.edition.language === "en"
+                  ? "font-poppins"
+                  : "font-noto-naskh-arabic"
+              )}
+              dir={tafseerData?.edition.language === "en" ? "ltr" : "rtl"}
+            >
+              <p>{tafseerData?.text}</p>
+            </ScrollArea>
           )}
         </DialogContent>
       </Dialog>

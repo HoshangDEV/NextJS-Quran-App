@@ -19,24 +19,15 @@ export type SurahsType = {
   }[];
 };
 
-export type TafseerListType = {
-  id: number;
+export type EditionItem = {
+  identifier: string;
   name: string;
-  language: string;
-  author: string;
-  book_name: string;
-}[];
-
-export type TafseerType = {
-  tafseer_id: number;
-  tafseer_name: string;
-  ayah_url: string;
-  ayah_number: number;
-  text: string;
+  language: "ku" | "ar" | "en";
 };
 
-export type TafseerKurdishType = {
+export type AyahEditionResponse = {
   data: {
     text: string;
+    edition: EditionItem;
   };
 };

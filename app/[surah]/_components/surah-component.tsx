@@ -3,7 +3,7 @@
 import { currentFontAtom } from "@/atoms";
 import ButtonGroup from "@/components/button-group";
 import { Card, CardHeader } from "@/components/ui/card";
-import { SurahType, TafseerListType } from "@/types";
+import { SurahType } from "@/types";
 import { useAtomValue } from "jotai";
 import AudioPlayer from "./audio-player";
 import AyahNumber from "./ayah-number";
@@ -13,10 +13,8 @@ import { Separator } from "@/components/ui/separator";
 
 export default function SurahComponent({
   surah,
-  TafseerList,
 }: {
   surah: SurahType["data"];
-  TafseerList: TafseerListType;
 }) {
   const font = useAtomValue(currentFontAtom);
 
@@ -74,7 +72,6 @@ export default function SurahComponent({
                     surahNumber={surah.number}
                     numberInSurah={ayah.numberInSurah}
                     ayahNumber={ayah.number}
-                    TafseerList={TafseerList}
                   />
                   <Separator orientation="vertical" className="h-4" />
                   <AudioPlayer

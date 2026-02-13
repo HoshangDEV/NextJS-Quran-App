@@ -20,7 +20,9 @@ Welcome to the Quran Application, a beautifully crafted web application built us
 
 ## API Usage
 
-This application utilizes the [Al-Quran Cloud API](https://alquran.cloud/api) to fetch the Surahs data and audio files for each Ayah. This API provides a robust and reliable source of Quranic text, information, and audio, making it an excellent choice for our application.
+This application uses the [Al-Quran Cloud API](https://alquran.cloud/api) exclusively for all data, including Quran text, audio recitations, and tafseer (interpretations) in Kurdish, Arabic, and English.
+
+For a full list of available editions (translations, tafseer, etc.), see: https://api.alquran.cloud/v1/edition
 
 ## Getting Started
 
