@@ -519,7 +519,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 8,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ الٓمٓ",
+        text: "الٓمٓ",
         audio: "https://cdn.islamic.network/quran/audio/128/ar.alafasy/8.mp3",
       },
       {
@@ -2242,7 +2242,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 294,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ الٓمٓ",
+        text: "الٓمٓ",
         audio: "https://cdn.islamic.network/quran/audio/128/ar.alafasy/294.mp3",
       },
       {
@@ -3449,7 +3449,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 494,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ يَٰٓأَيُّهَا ٱلنَّاسُ ٱتَّقُوا۟ رَبَّكُمُ ٱلَّذِى خَلَقَكُم مِّن نَّفْسٍۢ وَٰحِدَةٍۢ وَخَلَقَ مِنْهَا زَوْجَهَا وَبَثَّ مِنْهُمَا رِجَالًۭا كَثِيرًۭا وَنِسَآءًۭ ۚ وَٱتَّقُوا۟ ٱللَّهَ ٱلَّذِى تَسَآءَلُونَ بِهِۦ وَٱلْأَرْحَامَ ۚ إِنَّ ٱللَّهَ كَانَ عَلَيْكُمْ رَقِيبًۭا",
+        text: "يَٰٓأَيُّهَا ٱلنَّاسُ ٱتَّقُوا۟ رَبَّكُمُ ٱلَّذِى خَلَقَكُم مِّن نَّفْسٍۢ وَٰحِدَةٍۢ وَخَلَقَ مِنْهَا زَوْجَهَا وَبَثَّ مِنْهُمَا رِجَالًۭا كَثِيرًۭا وَنِسَآءًۭ ۚ وَٱتَّقُوا۟ ٱللَّهَ ٱلَّذِى تَسَآءَلُونَ بِهِۦ وَٱلْأَرْحَامَ ۚ إِنَّ ٱللَّهَ كَانَ عَلَيْكُمْ رَقِيبًۭا",
         audio: "https://cdn.islamic.network/quran/audio/128/ar.alafasy/494.mp3",
       },
       {
@@ -4512,7 +4512,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 670,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ أَوْفُوا۟ بِٱلْعُقُودِ ۚ أُحِلَّتْ لَكُم بَهِيمَةُ ٱلْأَنْعَٰمِ إِلَّا مَا يُتْلَىٰ عَلَيْكُمْ غَيْرَ مُحِلِّى ٱلصَّيْدِ وَأَنتُمْ حُرُمٌ ۗ إِنَّ ٱللَّهَ يَحْكُمُ مَا يُرِيدُ",
+        text: "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ أَوْفُوا۟ بِٱلْعُقُودِ ۚ أُحِلَّتْ لَكُم بَهِيمَةُ ٱلْأَنْعَٰمِ إِلَّا مَا يُتْلَىٰ عَلَيْكُمْ غَيْرَ مُحِلِّى ٱلصَّيْدِ وَأَنتُمْ حُرُمٌ ۗ إِنَّ ٱللَّهَ يَحْكُمُ مَا يُرِيدُ",
         audio: "https://cdn.islamic.network/quran/audio/128/ar.alafasy/670.mp3",
       },
       {
@@ -5239,7 +5239,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 790,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ٱلْحَمْدُ لِلَّهِ ٱلَّذِى خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ وَجَعَلَ ٱلظُّلُمَٰتِ وَٱلنُّورَ ۖ ثُمَّ ٱلَّذِينَ كَفَرُوا۟ بِرَبِّهِمْ يَعْدِلُونَ",
+        text: "ٱلْحَمْدُ لِلَّهِ ٱلَّذِى خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ وَجَعَلَ ٱلظُّلُمَٰتِ وَٱلنُّورَ ۖ ثُمَّ ٱلَّذِينَ كَفَرُوا۟ بِرَبِّهِمْ يَعْدِلُونَ",
         audio: "https://cdn.islamic.network/quran/audio/128/ar.alafasy/790.mp3",
       },
       {
@@ -6236,7 +6236,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 955,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ الٓمٓصٓ",
+        text: "الٓمٓصٓ",
         audio: "https://cdn.islamic.network/quran/audio/128/ar.alafasy/955.mp3",
       },
       {
@@ -7640,7 +7640,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 1161,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ يَسْـَٔلُونَكَ عَنِ ٱلْأَنفَالِ ۖ قُلِ ٱلْأَنفَالُ لِلَّهِ وَٱلرَّسُولِ ۖ فَٱتَّقُوا۟ ٱللَّهَ وَأَصْلِحُوا۟ ذَاتَ بَيْنِكُمْ ۖ وَأَطِيعُوا۟ ٱللَّهَ وَرَسُولَهُۥٓ إِن كُنتُم مُّؤْمِنِينَ",
+        text: "يَسْـَٔلُونَكَ عَنِ ٱلْأَنفَالِ ۖ قُلِ ٱلْأَنفَالُ لِلَّهِ وَٱلرَّسُولِ ۖ فَٱتَّقُوا۟ ٱللَّهَ وَأَصْلِحُوا۟ ذَاتَ بَيْنِكُمْ ۖ وَأَطِيعُوا۟ ٱللَّهَ وَرَسُولَهُۥٓ إِن كُنتُم مُّؤْمِنِينَ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/1161.mp3",
       },
@@ -9082,7 +9082,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 1365,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ الٓر ۚ تِلْكَ ءَايَٰتُ ٱلْكِتَٰبِ ٱلْحَكِيمِ",
+        text: "الٓر ۚ تِلْكَ ءَايَٰتُ ٱلْكِتَٰبِ ٱلْحَكِيمِ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/1365.mp3",
       },
@@ -9852,7 +9852,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 1474,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ الٓر ۚ كِتَٰبٌ أُحْكِمَتْ ءَايَٰتُهُۥ ثُمَّ فُصِّلَتْ مِن لَّدُنْ حَكِيمٍ خَبِيرٍ",
+        text: "الٓر ۚ كِتَٰبٌ أُحْكِمَتْ ءَايَٰتُهُۥ ثُمَّ فُصِّلَتْ مِن لَّدُنْ حَكِيمٍ خَبِيرٍ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/1474.mp3",
       },
@@ -10720,7 +10720,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 1597,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ الٓر ۚ تِلْكَ ءَايَٰتُ ٱلْكِتَٰبِ ٱلْمُبِينِ",
+        text: "الٓر ۚ تِلْكَ ءَايَٰتُ ٱلْكِتَٰبِ ٱلْمُبِينِ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/1597.mp3",
       },
@@ -11504,7 +11504,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 1708,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ الٓمٓر ۚ تِلْكَ ءَايَٰتُ ٱلْكِتَٰبِ ۗ وَٱلَّذِىٓ أُنزِلَ إِلَيْكَ مِن رَّبِّكَ ٱلْحَقُّ وَلَٰكِنَّ أَكْثَرَ ٱلنَّاسِ لَا يُؤْمِنُونَ",
+        text: "الٓمٓر ۚ تِلْكَ ءَايَٰتُ ٱلْكِتَٰبِ ۗ وَٱلَّذِىٓ أُنزِلَ إِلَيْكَ مِن رَّبِّكَ ٱلْحَقُّ وَلَٰكِنَّ أَكْثَرَ ٱلنَّاسِ لَا يُؤْمِنُونَ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/1708.mp3",
       },
@@ -11812,7 +11812,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 1751,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ الٓر ۚ كِتَٰبٌ أَنزَلْنَٰهُ إِلَيْكَ لِتُخْرِجَ ٱلنَّاسَ مِنَ ٱلظُّلُمَٰتِ إِلَى ٱلنُّورِ بِإِذْنِ رَبِّهِمْ إِلَىٰ صِرَٰطِ ٱلْعَزِيزِ ٱلْحَمِيدِ",
+        text: "الٓر ۚ كِتَٰبٌ أَنزَلْنَٰهُ إِلَيْكَ لِتُخْرِجَ ٱلنَّاسَ مِنَ ٱلظُّلُمَٰتِ إِلَى ٱلنُّورِ بِإِذْنِ رَبِّهِمْ إِلَىٰ صِرَٰطِ ٱلْعَزِيزِ ٱلْحَمِيدِ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/1751.mp3",
       },
@@ -12183,7 +12183,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 1803,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ الٓر ۚ تِلْكَ ءَايَٰتُ ٱلْكِتَٰبِ وَقُرْءَانٍۢ مُّبِينٍۢ",
+        text: "الٓر ۚ تِلْكَ ءَايَٰتُ ٱلْكِتَٰبِ وَقُرْءَانٍۢ مُّبِينٍۢ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/1803.mp3",
       },
@@ -12883,7 +12883,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 1902,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ أَتَىٰٓ أَمْرُ ٱللَّهِ فَلَا تَسْتَعْجِلُوهُ ۚ سُبْحَٰنَهُۥ وَتَعَٰلَىٰ عَمَّا يُشْرِكُونَ",
+        text: "أَتَىٰٓ أَمْرُ ٱللَّهِ فَلَا تَسْتَعْجِلُوهُ ۚ سُبْحَٰنَهُۥ وَتَعَٰلَىٰ عَمَّا يُشْرِكُونَ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/1902.mp3",
       },
@@ -13786,7 +13786,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 2030,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ سُبْحَٰنَ ٱلَّذِىٓ أَسْرَىٰ بِعَبْدِهِۦ لَيْلًۭا مِّنَ ٱلْمَسْجِدِ ٱلْحَرَامِ إِلَى ٱلْمَسْجِدِ ٱلْأَقْصَا ٱلَّذِى بَٰرَكْنَا حَوْلَهُۥ لِنُرِيَهُۥ مِنْ ءَايَٰتِنَآ ۚ إِنَّهُۥ هُوَ ٱلسَّمِيعُ ٱلْبَصِيرُ",
+        text: "سُبْحَٰنَ ٱلَّذِىٓ أَسْرَىٰ بِعَبْدِهِۦ لَيْلًۭا مِّنَ ٱلْمَسْجِدِ ٱلْحَرَامِ إِلَى ٱلْمَسْجِدِ ٱلْأَقْصَا ٱلَّذِى بَٰرَكْنَا حَوْلَهُۥ لِنُرِيَهُۥ مِنْ ءَايَٰتِنَآ ۚ إِنَّهُۥ هُوَ ٱلسَّمِيعُ ٱلْبَصِيرُ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2030.mp3",
       },
@@ -14570,7 +14570,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 2141,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ٱلْحَمْدُ لِلَّهِ ٱلَّذِىٓ أَنزَلَ عَلَىٰ عَبْدِهِ ٱلْكِتَٰبَ وَلَمْ يَجْعَل لَّهُۥ عِوَجَا ۜ",
+        text: "ٱلْحَمْدُ لِلَّهِ ٱلَّذِىٓ أَنزَلَ عَلَىٰ عَبْدِهِ ٱلْكِتَٰبَ وَلَمْ يَجْعَل لَّهُۥ عِوَجَا ۜ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2141.mp3",
       },
@@ -15347,7 +15347,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 2251,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ كٓهيعٓصٓ",
+        text: "كٓهيعٓصٓ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2251.mp3",
       },
@@ -16040,7 +16040,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 2349,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ طه",
+        text: "طه",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2349.mp3",
       },
@@ -16992,7 +16992,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 2484,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ٱقْتَرَبَ لِلنَّاسِ حِسَابُهُمْ وَهُمْ فِى غَفْلَةٍۢ مُّعْرِضُونَ",
+        text: "ٱقْتَرَبَ لِلنَّاسِ حِسَابُهُمْ وَهُمْ فِى غَفْلَةٍۢ مُّعْرِضُونَ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2484.mp3",
       },
@@ -17783,7 +17783,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 2596,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ يَٰٓأَيُّهَا ٱلنَّاسُ ٱتَّقُوا۟ رَبَّكُمْ ۚ إِنَّ زَلْزَلَةَ ٱلسَّاعَةِ شَىْءٌ عَظِيمٌۭ",
+        text: "يَٰٓأَيُّهَا ٱلنَّاسُ ٱتَّقُوا۟ رَبَّكُمْ ۚ إِنَّ زَلْزَلَةَ ٱلسَّاعَةِ شَىْءٌ عَظِيمٌۭ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2596.mp3",
       },
@@ -18336,7 +18336,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 2674,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قَدْ أَفْلَحَ ٱلْمُؤْمِنُونَ",
+        text: "قَدْ أَفْلَحَ ٱلْمُؤْمِنُونَ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2674.mp3",
       },
@@ -19169,7 +19169,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 2792,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ سُورَةٌ أَنزَلْنَٰهَا وَفَرَضْنَٰهَا وَأَنزَلْنَا فِيهَآ ءَايَٰتٍۭ بَيِّنَٰتٍۢ لَّعَلَّكُمْ تَذَكَّرُونَ",
+        text: "سُورَةٌ أَنزَلْنَٰهَا وَفَرَضْنَٰهَا وَأَنزَلْنَا فِيهَآ ءَايَٰتٍۭ بَيِّنَٰتٍۢ لَّعَلَّكُمْ تَذَكَّرُونَ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2792.mp3",
       },
@@ -19624,7 +19624,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 2856,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ تَبَارَكَ ٱلَّذِى نَزَّلَ ٱلْفُرْقَانَ عَلَىٰ عَبْدِهِۦ لِيَكُونَ لِلْعَٰلَمِينَ نَذِيرًا",
+        text: "تَبَارَكَ ٱلَّذِى نَزَّلَ ٱلْفُرْقَانَ عَلَىٰ عَبْدِهِۦ لِيَكُونَ لِلْعَٰلَمِينَ نَذِيرًا",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2856.mp3",
       },
@@ -20170,7 +20170,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 2933,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ طسٓمٓ",
+        text: "طسٓمٓ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/2933.mp3",
       },
@@ -21766,7 +21766,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 3160,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ طسٓ ۚ تِلْكَ ءَايَٰتُ ٱلْقُرْءَانِ وَكِتَابٍۢ مُّبِينٍ",
+        text: "طسٓ ۚ تِلْكَ ءَايَٰتُ ٱلْقُرْءَانِ وَكِتَابٍۢ مُّبِينٍ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/3160.mp3",
       },
@@ -22424,7 +22424,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 3253,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ طسٓمٓ",
+        text: "طسٓمٓ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/3253.mp3",
       },
@@ -23047,7 +23047,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 3341,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ الٓمٓ",
+        text: "الٓمٓ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/3341.mp3",
       },
@@ -23537,7 +23537,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 3410,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ الٓمٓ",
+        text: "الٓمٓ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/3410.mp3",
       },
@@ -23964,7 +23964,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 3470,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ الٓمٓ",
+        text: "الٓمٓ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/3470.mp3",
       },
@@ -24209,7 +24209,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 3504,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ الٓمٓ",
+        text: "الٓمٓ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/3504.mp3",
       },
@@ -24426,7 +24426,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 3534,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ يَٰٓأَيُّهَا ٱلنَّبِىُّ ٱتَّقِ ٱللَّهَ وَلَا تُطِعِ ٱلْكَٰفِرِينَ وَٱلْمُنَٰفِقِينَ ۗ إِنَّ ٱللَّهَ كَانَ عَلِيمًا حَكِيمًۭا",
+        text: "يَٰٓأَيُّهَا ٱلنَّبِىُّ ٱتَّقِ ٱللَّهَ وَلَا تُطِعِ ٱلْكَٰفِرِينَ وَٱلْمُنَٰفِقِينَ ۗ إِنَّ ٱللَّهَ كَانَ عَلِيمًا حَكِيمًۭا",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/3534.mp3",
       },
@@ -24944,7 +24944,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 3607,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ٱلْحَمْدُ لِلَّهِ ٱلَّذِى لَهُۥ مَا فِى ٱلسَّمَٰوَٰتِ وَمَا فِى ٱلْأَرْضِ وَلَهُ ٱلْحَمْدُ فِى ٱلْءَاخِرَةِ ۚ وَهُوَ ٱلْحَكِيمُ ٱلْخَبِيرُ",
+        text: "ٱلْحَمْدُ لِلَّهِ ٱلَّذِى لَهُۥ مَا فِى ٱلسَّمَٰوَٰتِ وَمَا فِى ٱلْأَرْضِ وَلَهُ ٱلْحَمْدُ فِى ٱلْءَاخِرَةِ ۚ وَهُوَ ٱلْحَكِيمُ ٱلْخَبِيرُ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/3607.mp3",
       },
@@ -25329,7 +25329,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 3661,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ٱلْحَمْدُ لِلَّهِ فَاطِرِ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ جَاعِلِ ٱلْمَلَٰٓئِكَةِ رُسُلًا أُو۟لِىٓ أَجْنِحَةٍۢ مَّثْنَىٰ وَثُلَٰثَ وَرُبَٰعَ ۚ يَزِيدُ فِى ٱلْخَلْقِ مَا يَشَآءُ ۚ إِنَّ ٱللَّهَ عَلَىٰ كُلِّ شَىْءٍۢ قَدِيرٌۭ",
+        text: "ٱلْحَمْدُ لِلَّهِ فَاطِرِ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ جَاعِلِ ٱلْمَلَٰٓئِكَةِ رُسُلًا أُو۟لِىٓ أَجْنِحَةٍۢ مَّثْنَىٰ وَثُلَٰثَ وَرُبَٰعَ ۚ يَزِيدُ فِى ٱلْخَلْقِ مَا يَشَآءُ ۚ إِنَّ ٱللَّهَ عَلَىٰ كُلِّ شَىْءٍۢ قَدِيرٌۭ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/3661.mp3",
       },
@@ -25651,7 +25651,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 3706,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ يسٓ",
+        text: "يسٓ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/3706.mp3",
       },
@@ -26239,7 +26239,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 3789,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَٱلصَّٰٓفَّٰتِ صَفًّۭا",
+        text: "وَٱلصَّٰٓفَّٰتِ صَفًّۭا",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/3789.mp3",
       },
@@ -27520,7 +27520,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 3971,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ صٓ ۚ وَٱلْقُرْءَانِ ذِى ٱلذِّكْرِ",
+        text: "صٓ ۚ وَٱلْقُرْءَانِ ذِى ٱلذِّكْرِ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/3971.mp3",
       },
@@ -28143,7 +28143,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 4059,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ تَنزِيلُ ٱلْكِتَٰبِ مِنَ ٱللَّهِ ٱلْعَزِيزِ ٱلْحَكِيمِ",
+        text: "تَنزِيلُ ٱلْكِتَٰبِ مِنَ ٱللَّهِ ٱلْعَزِيزِ ٱلْحَكِيمِ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4059.mp3",
       },
@@ -28675,7 +28675,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 4134,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ حمٓ",
+        text: "حمٓ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4134.mp3",
       },
@@ -29277,7 +29277,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 4219,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ حمٓ",
+        text: "حمٓ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4219.mp3",
       },
@@ -29662,7 +29662,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 4273,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ حمٓ",
+        text: "حمٓ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4273.mp3",
       },
@@ -30040,7 +30040,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 4326,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ حمٓ",
+        text: "حمٓ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4326.mp3",
       },
@@ -30670,7 +30670,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 4415,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ حمٓ",
+        text: "حمٓ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4415.mp3",
       },
@@ -31090,7 +31090,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 4474,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ حمٓ",
+        text: "حمٓ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4474.mp3",
       },
@@ -31356,7 +31356,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 4511,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ حمٓ",
+        text: "حمٓ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4511.mp3",
       },
@@ -31608,7 +31608,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 4546,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ٱلَّذِينَ كَفَرُوا۟ وَصَدُّوا۟ عَن سَبِيلِ ٱللَّهِ أَضَلَّ أَعْمَٰلَهُمْ",
+        text: "ٱلَّذِينَ كَفَرُوا۟ وَصَدُّوا۟ عَن سَبِيلِ ٱللَّهِ أَضَلَّ أَعْمَٰلَهُمْ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4546.mp3",
       },
@@ -31881,7 +31881,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 4584,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ إِنَّا فَتَحْنَا لَكَ فَتْحًۭا مُّبِينًۭا",
+        text: "إِنَّا فَتَحْنَا لَكَ فَتْحًۭا مُّبِينًۭا",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4584.mp3",
       },
@@ -32091,7 +32091,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 4613,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تُقَدِّمُوا۟ بَيْنَ يَدَىِ ٱللَّهِ وَرَسُولِهِۦ ۖ وَٱتَّقُوا۟ ٱللَّهَ ۚ إِنَّ ٱللَّهَ سَمِيعٌ عَلِيمٌۭ",
+        text: "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تُقَدِّمُوا۟ بَيْنَ يَدَىِ ٱللَّهِ وَرَسُولِهِۦ ۖ وَٱتَّقُوا۟ ٱللَّهَ ۚ إِنَّ ٱللَّهَ سَمِيعٌ عَلِيمٌۭ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4613.mp3",
       },
@@ -32224,7 +32224,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 4631,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قٓ ۚ وَٱلْقُرْءَانِ ٱلْمَجِيدِ",
+        text: "قٓ ۚ وَٱلْقُرْءَانِ ٱلْمَجِيدِ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4631.mp3",
       },
@@ -32546,7 +32546,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 4676,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَٱلذَّٰرِيَٰتِ ذَرْوًۭا",
+        text: "وَٱلذَّٰرِيَٰتِ ذَرْوًۭا",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4676.mp3",
       },
@@ -32973,7 +32973,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 4736,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَٱلطُّورِ",
+        text: "وَٱلطُّورِ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4736.mp3",
       },
@@ -33323,7 +33323,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 4785,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَٱلنَّجْمِ إِذَا هَوَىٰ",
+        text: "وَٱلنَّجْمِ إِذَا هَوَىٰ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4785.mp3",
       },
@@ -33764,7 +33764,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 4847,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ٱقْتَرَبَتِ ٱلسَّاعَةُ وَٱنشَقَّ ٱلْقَمَرُ",
+        text: "ٱقْتَرَبَتِ ٱلسَّاعَةُ وَٱنشَقَّ ٱلْقَمَرُ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4847.mp3",
       },
@@ -34156,7 +34156,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 4902,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ٱلرَّحْمَٰنُ",
+        text: "ٱلرَّحْمَٰنُ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4902.mp3",
       },
@@ -34709,7 +34709,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 4980,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ إِذَا وَقَعَتِ ٱلْوَاقِعَةُ",
+        text: "إِذَا وَقَعَتِ ٱلْوَاقِعَةُ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/4980.mp3",
       },
@@ -35388,7 +35388,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 5076,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ سَبَّحَ لِلَّهِ مَا فِى ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ ۖ وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ",
+        text: "سَبَّحَ لِلَّهِ مَا فِى ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ ۖ وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5076.mp3",
       },
@@ -35598,7 +35598,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 5105,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قَدْ سَمِعَ ٱللَّهُ قَوْلَ ٱلَّتِى تُجَٰدِلُكَ فِى زَوْجِهَا وَتَشْتَكِىٓ إِلَى ٱللَّهِ وَٱللَّهُ يَسْمَعُ تَحَاوُرَكُمَآ ۚ إِنَّ ٱللَّهَ سَمِيعٌۢ بَصِيرٌ",
+        text: "قَدْ سَمِعَ ٱللَّهُ قَوْلَ ٱلَّتِى تُجَٰدِلُكَ فِى زَوْجِهَا وَتَشْتَكِىٓ إِلَى ٱللَّهِ وَٱللَّهُ يَسْمَعُ تَحَاوُرَكُمَآ ۚ إِنَّ ٱللَّهَ سَمِيعٌۢ بَصِيرٌ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5105.mp3",
       },
@@ -35759,7 +35759,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 5127,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ سَبَّحَ لِلَّهِ مَا فِى ٱلسَّمَٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۖ وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ",
+        text: "سَبَّحَ لِلَّهِ مَا فِى ٱلسَّمَٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۖ وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5127.mp3",
       },
@@ -35934,7 +35934,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 5151,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تَتَّخِذُوا۟ عَدُوِّى وَعَدُوَّكُمْ أَوْلِيَآءَ تُلْقُونَ إِلَيْهِم بِٱلْمَوَدَّةِ وَقَدْ كَفَرُوا۟ بِمَا جَآءَكُم مِّنَ ٱلْحَقِّ يُخْرِجُونَ ٱلرَّسُولَ وَإِيَّاكُمْ ۙ أَن تُؤْمِنُوا۟ بِٱللَّهِ رَبِّكُمْ إِن كُنتُمْ خَرَجْتُمْ جِهَٰدًۭا فِى سَبِيلِى وَٱبْتِغَآءَ مَرْضَاتِى ۚ تُسِرُّونَ إِلَيْهِم بِٱلْمَوَدَّةِ وَأَنَا۠ أَعْلَمُ بِمَآ أَخْفَيْتُمْ وَمَآ أَعْلَنتُمْ ۚ وَمَن يَفْعَلْهُ مِنكُمْ فَقَدْ ضَلَّ سَوَآءَ ٱلسَّبِيلِ",
+        text: "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تَتَّخِذُوا۟ عَدُوِّى وَعَدُوَّكُمْ أَوْلِيَآءَ تُلْقُونَ إِلَيْهِم بِٱلْمَوَدَّةِ وَقَدْ كَفَرُوا۟ بِمَا جَآءَكُم مِّنَ ٱلْحَقِّ يُخْرِجُونَ ٱلرَّسُولَ وَإِيَّاكُمْ ۙ أَن تُؤْمِنُوا۟ بِٱللَّهِ رَبِّكُمْ إِن كُنتُمْ خَرَجْتُمْ جِهَٰدًۭا فِى سَبِيلِى وَٱبْتِغَآءَ مَرْضَاتِى ۚ تُسِرُّونَ إِلَيْهِم بِٱلْمَوَدَّةِ وَأَنَا۠ أَعْلَمُ بِمَآ أَخْفَيْتُمْ وَمَآ أَعْلَنتُمْ ۚ وَمَن يَفْعَلْهُ مِنكُمْ فَقَدْ ضَلَّ سَوَآءَ ٱلسَّبِيلِ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5151.mp3",
       },
@@ -36032,7 +36032,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 5164,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ سَبَّحَ لِلَّهِ مَا فِى ٱلسَّمَٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۖ وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ",
+        text: "سَبَّحَ لِلَّهِ مَا فِى ٱلسَّمَٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۖ وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5164.mp3",
       },
@@ -36137,7 +36137,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 5178,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ يُسَبِّحُ لِلَّهِ مَا فِى ٱلسَّمَٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ٱلْمَلِكِ ٱلْقُدُّوسِ ٱلْعَزِيزِ ٱلْحَكِيمِ",
+        text: "يُسَبِّحُ لِلَّهِ مَا فِى ٱلسَّمَٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ٱلْمَلِكِ ٱلْقُدُّوسِ ٱلْعَزِيزِ ٱلْحَكِيمِ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5178.mp3",
       },
@@ -36221,7 +36221,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 5189,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ إِذَا جَآءَكَ ٱلْمُنَٰفِقُونَ قَالُوا۟ نَشْهَدُ إِنَّكَ لَرَسُولُ ٱللَّهِ ۗ وَٱللَّهُ يَعْلَمُ إِنَّكَ لَرَسُولُهُۥ وَٱللَّهُ يَشْهَدُ إِنَّ ٱلْمُنَٰفِقِينَ لَكَٰذِبُونَ",
+        text: "إِذَا جَآءَكَ ٱلْمُنَٰفِقُونَ قَالُوا۟ نَشْهَدُ إِنَّكَ لَرَسُولُ ٱللَّهِ ۗ وَٱللَّهُ يَعْلَمُ إِنَّكَ لَرَسُولُهُۥ وَٱللَّهُ يَشْهَدُ إِنَّ ٱلْمُنَٰفِقِينَ لَكَٰذِبُونَ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5189.mp3",
       },
@@ -36305,7 +36305,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 5200,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ يُسَبِّحُ لِلَّهِ مَا فِى ٱلسَّمَٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۖ لَهُ ٱلْمُلْكُ وَلَهُ ٱلْحَمْدُ ۖ وَهُوَ عَلَىٰ كُلِّ شَىْءٍۢ قَدِيرٌ",
+        text: "يُسَبِّحُ لِلَّهِ مَا فِى ٱلسَّمَٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۖ لَهُ ٱلْمُلْكُ وَلَهُ ٱلْحَمْدُ ۖ وَهُوَ عَلَىٰ كُلِّ شَىْءٍۢ قَدِيرٌ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5200.mp3",
       },
@@ -36438,7 +36438,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 5218,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ يَٰٓأَيُّهَا ٱلنَّبِىُّ إِذَا طَلَّقْتُمُ ٱلنِّسَآءَ فَطَلِّقُوهُنَّ لِعِدَّتِهِنَّ وَأَحْصُوا۟ ٱلْعِدَّةَ ۖ وَٱتَّقُوا۟ ٱللَّهَ رَبَّكُمْ ۖ لَا تُخْرِجُوهُنَّ مِنۢ بُيُوتِهِنَّ وَلَا يَخْرُجْنَ إِلَّآ أَن يَأْتِينَ بِفَٰحِشَةٍۢ مُّبَيِّنَةٍۢ ۚ وَتِلْكَ حُدُودُ ٱللَّهِ ۚ وَمَن يَتَعَدَّ حُدُودَ ٱللَّهِ فَقَدْ ظَلَمَ نَفْسَهُۥ ۚ لَا تَدْرِى لَعَلَّ ٱللَّهَ يُحْدِثُ بَعْدَ ذَٰلِكَ أَمْرًۭا",
+        text: "يَٰٓأَيُّهَا ٱلنَّبِىُّ إِذَا طَلَّقْتُمُ ٱلنِّسَآءَ فَطَلِّقُوهُنَّ لِعِدَّتِهِنَّ وَأَحْصُوا۟ ٱلْعِدَّةَ ۖ وَٱتَّقُوا۟ ٱللَّهَ رَبَّكُمْ ۖ لَا تُخْرِجُوهُنَّ مِنۢ بُيُوتِهِنَّ وَلَا يَخْرُجْنَ إِلَّآ أَن يَأْتِينَ بِفَٰحِشَةٍۢ مُّبَيِّنَةٍۢ ۚ وَتِلْكَ حُدُودُ ٱللَّهِ ۚ وَمَن يَتَعَدَّ حُدُودَ ٱللَّهِ فَقَدْ ظَلَمَ نَفْسَهُۥ ۚ لَا تَدْرِى لَعَلَّ ٱللَّهَ يُحْدِثُ بَعْدَ ذَٰلِكَ أَمْرًۭا",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5218.mp3",
       },
@@ -36529,7 +36529,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 5230,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ يَٰٓأَيُّهَا ٱلنَّبِىُّ لِمَ تُحَرِّمُ مَآ أَحَلَّ ٱللَّهُ لَكَ ۖ تَبْتَغِى مَرْضَاتَ أَزْوَٰجِكَ ۚ وَٱللَّهُ غَفُورٌۭ رَّحِيمٌۭ",
+        text: "يَٰٓأَيُّهَا ٱلنَّبِىُّ لِمَ تُحَرِّمُ مَآ أَحَلَّ ٱللَّهُ لَكَ ۖ تَبْتَغِى مَرْضَاتَ أَزْوَٰجِكَ ۚ وَٱللَّهُ غَفُورٌۭ رَّحِيمٌۭ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5230.mp3",
       },
@@ -36620,7 +36620,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 5242,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ تَبَٰرَكَ ٱلَّذِى بِيَدِهِ ٱلْمُلْكُ وَهُوَ عَلَىٰ كُلِّ شَىْءٍۢ قَدِيرٌ",
+        text: "تَبَٰرَكَ ٱلَّذِى بِيَدِهِ ٱلْمُلْكُ وَهُوَ عَلَىٰ كُلِّ شَىْءٍۢ قَدِيرٌ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5242.mp3",
       },
@@ -36837,7 +36837,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 5272,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ نٓ ۚ وَٱلْقَلَمِ وَمَا يَسْطُرُونَ",
+        text: "نٓ ۚ وَٱلْقَلَمِ وَمَا يَسْطُرُونَ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5272.mp3",
       },
@@ -37208,7 +37208,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 5324,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ٱلْحَآقَّةُ",
+        text: "ٱلْحَآقَّةُ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5324.mp3",
       },
@@ -37579,7 +37579,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 5376,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ سَأَلَ سَآئِلٌۢ بِعَذَابٍۢ وَاقِعٍۢ",
+        text: "سَأَلَ سَآئِلٌۢ بِعَذَابٍۢ وَاقِعٍۢ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5376.mp3",
       },
@@ -37894,7 +37894,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 5420,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ إِنَّآ أَرْسَلْنَا نُوحًا إِلَىٰ قَوْمِهِۦٓ أَنْ أَنذِرْ قَوْمَكَ مِن قَبْلِ أَن يَأْتِيَهُمْ عَذَابٌ أَلِيمٌۭ",
+        text: "إِنَّآ أَرْسَلْنَا نُوحًا إِلَىٰ قَوْمِهِۦٓ أَنْ أَنذِرْ قَوْمَكَ مِن قَبْلِ أَن يَأْتِيَهُمْ عَذَابٌ أَلِيمٌۭ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5420.mp3",
       },
@@ -38097,7 +38097,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 5448,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ أُوحِىَ إِلَىَّ أَنَّهُ ٱسْتَمَعَ نَفَرٌۭ مِّنَ ٱلْجِنِّ فَقَالُوٓا۟ إِنَّا سَمِعْنَا قُرْءَانًا عَجَبًۭا",
+        text: "قُلْ أُوحِىَ إِلَىَّ أَنَّهُ ٱسْتَمَعَ نَفَرٌۭ مِّنَ ٱلْجِنِّ فَقَالُوٓا۟ إِنَّا سَمِعْنَا قُرْءَانًا عَجَبًۭا",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5448.mp3",
       },
@@ -38300,7 +38300,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 5476,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ يَٰٓأَيُّهَا ٱلْمُزَّمِّلُ",
+        text: "يَٰٓأَيُّهَا ٱلْمُزَّمِّلُ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5476.mp3",
       },
@@ -38447,7 +38447,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 5496,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ يَٰٓأَيُّهَا ٱلْمُدَّثِّرُ",
+        text: "يَٰٓأَيُّهَا ٱلْمُدَّثِّرُ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5496.mp3",
       },
@@ -38846,7 +38846,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 5552,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ لَآ أُقْسِمُ بِيَوْمِ ٱلْقِيَٰمَةِ",
+        text: "لَآ أُقْسِمُ بِيَوْمِ ٱلْقِيَٰمَةِ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5552.mp3",
       },
@@ -39133,7 +39133,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 5592,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ هَلْ أَتَىٰ عَلَى ٱلْإِنسَٰنِ حِينٌۭ مِّنَ ٱلدَّهْرِ لَمْ يَكُن شَيْـًۭٔا مَّذْكُورًا",
+        text: "هَلْ أَتَىٰ عَلَى ٱلْإِنسَٰنِ حِينٌۭ مِّنَ ٱلدَّهْرِ لَمْ يَكُن شَيْـًۭٔا مَّذْكُورًا",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5592.mp3",
       },
@@ -39357,7 +39357,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 5623,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَٱلْمُرْسَلَٰتِ عُرْفًۭا",
+        text: "وَٱلْمُرْسَلَٰتِ عُرْفًۭا",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5623.mp3",
       },
@@ -39714,7 +39714,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 5673,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ عَمَّ يَتَسَآءَلُونَ",
+        text: "عَمَّ يَتَسَآءَلُونَ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5673.mp3",
       },
@@ -40001,7 +40001,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 5713,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَٱلنَّٰزِعَٰتِ غَرْقًۭا",
+        text: "وَٱلنَّٰزِعَٰتِ غَرْقًۭا",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5713.mp3",
       },
@@ -40330,7 +40330,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 5759,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ عَبَسَ وَتَوَلَّىٰٓ",
+        text: "عَبَسَ وَتَوَلَّىٰٓ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5759.mp3",
       },
@@ -40631,7 +40631,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 5801,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ إِذَا ٱلشَّمْسُ كُوِّرَتْ",
+        text: "إِذَا ٱلشَّمْسُ كُوِّرَتْ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5801.mp3",
       },
@@ -40841,7 +40841,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 5830,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ إِذَا ٱلسَّمَآءُ ٱنفَطَرَتْ",
+        text: "إِذَا ٱلسَّمَآءُ ٱنفَطَرَتْ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5830.mp3",
       },
@@ -40981,7 +40981,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 5849,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَيْلٌۭ لِّلْمُطَفِّفِينَ",
+        text: "وَيْلٌۭ لِّلْمُطَفِّفِينَ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5849.mp3",
       },
@@ -41240,7 +41240,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 5885,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ إِذَا ٱلسَّمَآءُ ٱنشَقَّتْ",
+        text: "إِذَا ٱلسَّمَآءُ ٱنشَقَّتْ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5885.mp3",
       },
@@ -41422,7 +41422,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 5910,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَٱلسَّمَآءِ ذَاتِ ٱلْبُرُوجِ",
+        text: "وَٱلسَّمَآءِ ذَاتِ ٱلْبُرُوجِ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5910.mp3",
       },
@@ -41583,7 +41583,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 5932,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَٱلسَّمَآءِ وَٱلطَّارِقِ",
+        text: "وَٱلسَّمَآءِ وَٱلطَّارِقِ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5932.mp3",
       },
@@ -41709,7 +41709,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 5949,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ سَبِّحِ ٱسْمَ رَبِّكَ ٱلْأَعْلَى",
+        text: "سَبِّحِ ٱسْمَ رَبِّكَ ٱلْأَعْلَى",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5949.mp3",
       },
@@ -41849,7 +41849,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 5968,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ هَلْ أَتَىٰكَ حَدِيثُ ٱلْغَٰشِيَةِ",
+        text: "هَلْ أَتَىٰكَ حَدِيثُ ٱلْغَٰشِيَةِ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5968.mp3",
       },
@@ -42038,7 +42038,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 5994,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَٱلْفَجْرِ",
+        text: "وَٱلْفَجْرِ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/5994.mp3",
       },
@@ -42255,7 +42255,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 6024,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ لَآ أُقْسِمُ بِهَٰذَا ٱلْبَلَدِ",
+        text: "لَآ أُقْسِمُ بِهَٰذَا ٱلْبَلَدِ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6024.mp3",
       },
@@ -42402,7 +42402,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 6044,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَٱلشَّمْسِ وَضُحَىٰهَا",
+        text: "وَٱلشَّمْسِ وَضُحَىٰهَا",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6044.mp3",
       },
@@ -42514,7 +42514,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 6059,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَٱلَّيْلِ إِذَا يَغْشَىٰ",
+        text: "وَٱلَّيْلِ إِذَا يَغْشَىٰ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6059.mp3",
       },
@@ -42668,7 +42668,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 6080,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَٱلضُّحَىٰ",
+        text: "وَٱلضُّحَىٰ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6080.mp3",
       },
@@ -42752,7 +42752,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 6091,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ",
+        text: "أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6091.mp3",
       },
@@ -42878,7 +42878,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 6107,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ٱقْرَأْ بِٱسْمِ رَبِّكَ ٱلَّذِى خَلَقَ",
+        text: "ٱقْرَأْ بِٱسْمِ رَبِّكَ ٱلَّذِى خَلَقَ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6107.mp3",
       },
@@ -43060,7 +43060,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 6131,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ لَمْ يَكُنِ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَٰبِ وَٱلْمُشْرِكِينَ مُنفَكِّينَ حَتَّىٰ تَأْتِيَهُمُ ٱلْبَيِّنَةُ",
+        text: "لَمْ يَكُنِ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَٰبِ وَٱلْمُشْرِكِينَ مُنفَكِّينَ حَتَّىٰ تَأْتِيَهُمُ ٱلْبَيِّنَةُ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6131.mp3",
       },
@@ -43123,7 +43123,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 6139,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ إِذَا زُلْزِلَتِ ٱلْأَرْضُ زِلْزَالَهَا",
+        text: "إِذَا زُلْزِلَتِ ٱلْأَرْضُ زِلْزَالَهَا",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6139.mp3",
       },
@@ -43186,7 +43186,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 6147,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَٱلْعَٰدِيَٰتِ ضَبْحًۭا",
+        text: "وَٱلْعَٰدِيَٰتِ ضَبْحًۭا",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6147.mp3",
       },
@@ -43270,7 +43270,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 6158,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ٱلْقَارِعَةُ",
+        text: "ٱلْقَارِعَةُ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6158.mp3",
       },
@@ -43354,7 +43354,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 6169,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ أَلْهَىٰكُمُ ٱلتَّكَاثُرُ",
+        text: "أَلْهَىٰكُمُ ٱلتَّكَاثُرُ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6169.mp3",
       },
@@ -43417,7 +43417,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 6177,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَٱلْعَصْرِ",
+        text: "وَٱلْعَصْرِ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6177.mp3",
       },
@@ -43445,7 +43445,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 6180,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَيْلٌۭ لِّكُلِّ هُمَزَةٍۢ لُّمَزَةٍ",
+        text: "وَيْلٌۭ لِّكُلِّ هُمَزَةٍۢ لُّمَزَةٍ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6180.mp3",
       },
@@ -43515,7 +43515,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 6189,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَٰبِ ٱلْفِيلِ",
+        text: "أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَٰبِ ٱلْفِيلِ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6189.mp3",
       },
@@ -43557,7 +43557,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 6194,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ لِإِيلَٰفِ قُرَيْشٍ",
+        text: "لِإِيلَٰفِ قُرَيْشٍ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6194.mp3",
       },
@@ -43592,7 +43592,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 6198,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ أَرَءَيْتَ ٱلَّذِى يُكَذِّبُ بِٱلدِّينِ",
+        text: "أَرَءَيْتَ ٱلَّذِى يُكَذِّبُ بِٱلدِّينِ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6198.mp3",
       },
@@ -43648,7 +43648,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 6205,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ إِنَّآ أَعْطَيْنَٰكَ ٱلْكَوْثَرَ",
+        text: "إِنَّآ أَعْطَيْنَٰكَ ٱلْكَوْثَرَ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6205.mp3",
       },
@@ -43676,7 +43676,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 6208,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ يَٰٓأَيُّهَا ٱلْكَٰفِرُونَ",
+        text: "قُلْ يَٰٓأَيُّهَا ٱلْكَٰفِرُونَ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6208.mp3",
       },
@@ -43725,7 +43725,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 6214,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ إِذَا جَآءَ نَصْرُ ٱللَّهِ وَٱلْفَتْحُ",
+        text: "إِذَا جَآءَ نَصْرُ ٱللَّهِ وَٱلْفَتْحُ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6214.mp3",
       },
@@ -43753,7 +43753,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 6217,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ تَبَّتْ يَدَآ أَبِى لَهَبٍۢ وَتَبَّ",
+        text: "تَبَّتْ يَدَآ أَبِى لَهَبٍۢ وَتَبَّ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6217.mp3",
       },
@@ -43795,7 +43795,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 6222,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ هُوَ ٱللَّهُ أَحَدٌ",
+        text: "قُلْ هُوَ ٱللَّهُ أَحَدٌ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6222.mp3",
       },
@@ -43830,7 +43830,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 6226,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ",
+        text: "قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6226.mp3",
       },
@@ -43872,7 +43872,7 @@ export const SURAH_MAP: Record<number, SurahType> = {
       {
         number: 6231,
         numberInSurah: 1,
-        text: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ",
+        text: "قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ",
         audio:
           "https://cdn.islamic.network/quran/audio/128/ar.alafasy/6231.mp3",
       },
